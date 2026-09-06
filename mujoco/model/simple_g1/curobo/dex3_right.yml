@@ -1,0 +1,121 @@
+##
+## Dex3-1 Hand Configuration for CuRobo
+## Right hand configuration
+##
+robot_cfg:
+  # robot_color: [0.2, 0.3, 0.8, 1.0]
+  kinematics:
+    base_link: right_hand_palm_link
+    external_robot_configs_path: robots/g1/curobo
+    external_asset_path: robots/g1
+    use_root_pose: True
+    # hand_pose_transfer_path: hand_pose_transfer/dex3_right.yml
+    
+    # All links that need collision checking
+    collision_link_names:
+      - right_hand_palm_link
+      - right_hand_thumb_0_link
+      - right_hand_thumb_1_link
+      - right_hand_thumb_2_link
+      - right_hand_middle_0_link
+      - right_hand_middle_1_link
+      - right_hand_index_0_link
+      - right_hand_index_1_link
+    
+    collision_sphere_buffer: 0.0
+    collision_spheres: spheres/dex3_right.yml
+    
+    # Primary end-effector (middle fingertip as reference)
+    ee_link: right_hand_palm_link
+    
+    # Contact points - fingertip links only
+    link_names:
+      - right_hand_thumb_2_link      # Thumb tip
+      - right_hand_index_1_link      # Index tip
+      - right_hand_middle_1_link     # Middle tip
+    
+    # Self-collision buffer for each link
+    self_collision_buffer:
+      right_hand_palm_link: 0.0
+      right_hand_thumb_0_link: 0.002
+      right_hand_thumb_1_link: 0.002
+      right_hand_thumb_2_link: 0.0      # Fingertip - no buffer
+      right_hand_middle_0_link: 0.002
+      right_hand_middle_1_link: 0.0     # Fingertip - no buffer
+      right_hand_index_0_link: 0.002
+      right_hand_index_1_link: 0.0      # Fingertip - no buffer
+    
+    # Adjacent links in kinematic chain don't collide
+    self_collision_ignore:
+      right_hand_palm_link:
+        - right_hand_thumb_0_link
+        - right_hand_index_0_link
+        - right_hand_middle_0_link
+      right_hand_thumb_0_link: [right_hand_thumb_1_link]
+      right_hand_thumb_1_link: [right_hand_thumb_2_link]
+      right_hand_middle_0_link: [right_hand_middle_1_link]
+      right_hand_index_0_link: [right_hand_index_1_link]
+    
+    # Path to Dex3-1 URDF
+    # TODO: Provide actual URDF path
+    urdf_path: g1_29dof_with_dex3.urdf
+    # asset_root_path: robot/unitree_dex3-1
+    external_asset_path: robots/g1
+    external_robot_configs_path: robots/g1/curobo
+    
+    # Configuration space - 7 independently actuated DOF
+    cspace:
+      joint_names:
+        - right_hand_thumb_0_joint      # Thumb abduction (Y-axis)
+        - right_hand_thumb_1_joint      # Thumb MCP flexion (Z-axis)
+        - right_hand_thumb_2_joint      # Thumb IP flexion (Z-axis)
+        - right_hand_index_0_joint      # Index MCP flexion
+        - right_hand_index_1_joint      # Index PIP flexion
+        - right_hand_middle_0_joint     # Middle MCP flexion
+        - right_hand_middle_1_joint     # Middle PIP flexion
+      
+      # Weight for configuration space distance metric
+      cspace_distance_weight:
+        - 0.15  # Thumb abduction - important for grasp variety
+        - 0.12  # Thumb MCP
+        - 0.10  # Thumb IP
+        - 0.12  # Index MCP
+        - 0.10  # Index PIP
+        - 0.12  # Middle MCP
+        - 0.10  # Middle PIP
+      
+      # Null space optimization weights
+      null_space_weight:
+        - 1.0
+        - 1.0
+        - 1.0
+        - 1.0
+        - 1.0
+        - 1.0
+        - 1.0
+      
+      # Safe collision-free retracted configuration
+      # Thumb slightly abducted, fingers moderately flexed
+      # Values selected to avoid joint limits and self-collision
+      retract_config:
+        - 0.2    # Thumb abduction: 11.5° (away from fingers)
+        - -0.2   # Thumb MCP: -11.5° (slightly extended)
+        - -0.6   # Thumb IP: -34.4° (moderate flexion)
+        - 0.5    # Index MCP: 28.6° (gentle flexion)
+        - 0.7    # Index PIP: 40.1° (moderate flexion)
+        - 0.5    # Middle MCP: 28.6° (gentle flexion)
+        - 0.7    # Middle PIP: 40.1° (moderate flexion)
+      
+      max_acceleration: 15.0
+      max_jerk: 500.0
+    
+    # All links for visualization
+    mesh_link_names:
+      - right_hand_palm_link
+      - right_hand_thumb_0_link
+      - right_hand_thumb_1_link
+      - right_hand_thumb_2_link
+      - right_hand_middle_0_link
+      - right_hand_middle_1_link
+      - right_hand_index_0_link
+      - right_hand_index_1_link

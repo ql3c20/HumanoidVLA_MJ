@@ -1,0 +1,361 @@
+robot_cfg:
+    kinematics:
+        use_usd_kinematics: false
+        urdf_path: g1_29dof_with_dex3.urdf
+        external_robot_configs_path: robots/g1/curobo
+        external_asset_path: robots/g1
+        asset_root_path: null
+        isaac_usd_path: null
+        usd_robot_root: g1_29dof_with_dex3
+        usd_path: null
+        base_link: "pelvis"
+        ee_link: "right_hand_palm_link" 
+        # link_names: ["left_wrist_yaw_link", "right_wrist_yaw_link" , "left_hand_palm_link", "right_hand_palm_link",
+        #             "left_hand_thumb_2_link","left_hand_index_1_link","left_hand_middle_1_link",
+        #             "right_hand_thumb_2_link","right_hand_index_1_link","right_hand_middle_1_link"] # TODO "left_ankle_roll_link", "right_ankle_roll_link"
+
+        link_names: [ "waist_yaw_link", "waist_roll_link", "torso_link",
+                    "right_hand_palm_link", "right_hand_index_1_link","right_hand_middle_1_link","right_hand_thumb_2_link",
+                    "left_hand_palm_link", "left_hand_index_1_link","left_hand_middle_1_link","left_hand_thumb_2_link",]
+        # lock_joints: {"waist_yaw_joint": 0.0, "waist_roll_joint": 0.0, "waist_pitch_joint": 0.0}
+
+
+
+        collision_link_names:
+
+            [
+                "left_shoulder_pitch_link",
+                "left_shoulder_roll_link",
+                "left_shoulder_yaw_link",
+                "left_elbow_link",
+                "left_wrist_pitch_link",
+                
+                "torso_link",
+
+                "right_shoulder_pitch_link",
+                "right_shoulder_roll_link",
+                "right_shoulder_yaw_link",
+                "right_elbow_link",
+                "right_wrist_pitch_link",
+
+                "left_hand_palm_link",
+                "left_hand_thumb_0_link",
+                "left_hand_thumb_1_link",
+                "left_hand_thumb_2_link",
+                "left_hand_middle_0_link",
+                "left_hand_middle_1_link",
+                "left_hand_index_0_link",
+                "left_hand_index_1_link",
+                
+                "right_hand_palm_link",
+                "right_hand_thumb_0_link",
+                "right_hand_thumb_1_link",
+                "right_hand_thumb_2_link",
+                "right_hand_middle_0_link",
+                "right_hand_middle_1_link",
+                "right_hand_index_0_link",
+                "right_hand_index_1_link",
+                
+            ]
+        collision_spheres: spheres/g1_29dof.yml
+        collision_sphere_buffer: 0.005
+        extra_collision_spheres: {}
+        self_collision_ignore: {
+            "left_shoulder_pitch_link": [
+                "left_shoulder_pitch_link",
+                "left_shoulder_roll_link",
+                "left_shoulder_yaw_link",
+                "left_elbow_link",
+                "left_wrist_pitch_link",
+                "torso_link",
+            ],
+            "left_shoulder_roll_link": [
+                "left_shoulder_pitch_link",
+                "left_shoulder_roll_link",
+                "left_shoulder_yaw_link",
+                "left_elbow_link",
+                "left_wrist_pitch_link",
+                "torso_link",
+            ],
+            "left_shoulder_yaw_link": [
+                "left_shoulder_pitch_link",
+                "left_shoulder_roll_link",
+                "left_shoulder_yaw_link",
+                "left_elbow_link",
+                "left_wrist_pitch_link",
+                
+            ],
+            "left_elbow_link": [
+                "left_shoulder_pitch_link",
+                "left_shoulder_roll_link",
+                "left_shoulder_yaw_link",
+                "left_elbow_link",
+                "left_wrist_pitch_link",
+                
+            ],
+            "left_wrist_pitch_link": [
+                "left_shoulder_pitch_link",
+                "left_shoulder_roll_link",
+                "left_shoulder_yaw_link",
+                "left_elbow_link",
+                "left_wrist_pitch_link",
+                
+            ],
+            "torso_link": [
+                "left_shoulder_pitch_link",
+                "left_shoulder_roll_link",
+              
+                "right_shoulder_pitch_link",
+                "right_shoulder_roll_link",
+              
+                
+            ],
+            "right_shoulder_pitch_link": [
+                "right_shoulder_pitch_link",
+                "right_shoulder_roll_link",
+                "right_shoulder_yaw_link",
+                "right_elbow_link",
+                "right_wrist_pitch_link",
+                "torso_link",
+            ],
+            "right_shoulder_roll_link": [
+                "right_shoulder_pitch_link",
+                "right_shoulder_roll_link",
+                "right_shoulder_yaw_link",
+                "right_elbow_link",
+                "right_wrist_pitch_link",
+                "torso_link",
+            ],
+            "right_shoulder_yaw_link": [
+                "right_shoulder_pitch_link",
+                "right_shoulder_roll_link",
+                "right_shoulder_yaw_link",
+                "right_elbow_link",
+                "right_wrist_pitch_link",
+                
+            ],
+            "right_elbow_link": [
+                "right_shoulder_pitch_link",
+                "right_shoulder_roll_link",
+                "right_shoulder_yaw_link",
+                "right_elbow_link",
+                "right_wrist_pitch_link",
+              
+            ],
+            "right_wrist_pitch_link": [
+                "right_shoulder_pitch_link",
+                "right_shoulder_roll_link",
+                "right_shoulder_yaw_link",
+                "right_elbow_link",
+                "right_wrist_pitch_link",
+            ],
+
+            "left_hand_palm_link": [
+                "left_hand_palm_link",
+                "left_hand_index_1_link",
+                "left_hand_middle_1_link",
+                "left_hand_thumb_2_link",
+            ],
+            "left_hand_thumb_0_link": [
+                "left_hand_palm_link",
+                "left_hand_index_1_link",
+                "left_hand_middle_1_link",
+                "left_hand_thumb_2_link",
+            ],
+            "left_hand_thumb_1_link": [
+                "left_hand_palm_link",
+                "left_hand_index_1_link",
+                "left_hand_middle_1_link",
+                "left_hand_thumb_2_link",
+            ],
+            "left_hand_thumb_2_link": [
+                "left_hand_palm_link",
+                "left_hand_index_1_link",
+                "left_hand_middle_1_link",
+                "left_hand_thumb_2_link",
+            ],
+            "left_hand_middle_0_link": [
+                "left_hand_palm_link",
+                "left_hand_index_1_link",
+                "left_hand_middle_1_link",
+                "left_hand_thumb_2_link",
+            ],
+            "left_hand_middle_1_link": [
+                "left_hand_palm_link",
+                "left_hand_index_1_link",
+                "left_hand_middle_1_link",
+                "left_hand_thumb_2_link",
+            ],
+            "left_hand_index_0_link": [
+                "left_hand_palm_link",
+                "left_hand_index_1_link",
+                "left_hand_middle_1_link",
+                "left_hand_thumb_2_link",
+            ],
+            "left_hand_index_1_link": [
+                "left_hand_palm_link",
+                "left_hand_index_1_link",
+                "left_hand_middle_1_link",
+                "left_hand_thumb_2_link",
+            ],
+
+            "right_hand_palm_link": [
+                "right_hand_palm_link",
+                "right_hand_index_1_link",
+                "right_hand_middle_1_link",
+                "right_hand_thumb_2_link",
+            ],
+            "right_hand_index_1_link": [
+                "right_hand_palm_link",
+                "right_hand_index_1_link",
+                "right_hand_middle_1_link",
+                "right_hand_thumb_2_link",
+            ],
+            "right_hand_middle_1_link": [
+                "right_hand_palm_link",
+                "right_hand_index_1_link",
+                "right_hand_middle_1_link",
+                "right_hand_thumb_2_link",
+            ],
+            "right_hand_thumb_2_link": [
+                "right_hand_palm_link",
+                "right_hand_index_1_link",
+                "right_hand_middle_1_link",
+                "right_hand_thumb_2_link",
+            ],
+            "right_hand_thumb_0_link": [
+                "right_hand_palm_link",
+                "right_hand_index_1_link",
+                "right_hand_middle_1_link",
+                "right_hand_thumb_2_link",
+            ],
+            "right_hand_thumb_1_link": [
+                "right_hand_palm_link",
+                "right_hand_index_1_link",
+                "right_hand_middle_1_link",
+                "right_hand_thumb_2_link",
+            ],
+            "right_hand_middle_0_link": [
+                "right_hand_palm_link",
+                "right_hand_index_1_link",
+                "right_hand_middle_1_link",
+                "right_hand_thumb_2_link",
+            ],
+            "right_hand_index_0_link": [
+                "right_hand_palm_link",
+                "right_hand_index_1_link",
+                "right_hand_middle_1_link",
+                "right_hand_thumb_2_link",
+            ],
+        }
+        self_collision_buffer: {
+            "left_shoulder_pitch_link": 0.00,
+            "left_shoulder_roll_link": 0.00,
+            "left_shoulder_yaw_link": 0.00,
+            "left_elbow_link": 0.00,
+            "left_wrist_pitch_link": 0.00,
+            "torso_link": 0.00,
+            "right_shoulder_pitch_link": 0.00,
+            "right_shoulder_roll_link": 0.00,
+            "right_shoulder_yaw_link": 0.00,
+            "right_elbow_link": 0.00,
+            "right_wrist_pitch_link": 0.00,
+
+            "left_hand_palm_link": 0.00,
+            "left_hand_thumb_0_link": 0.00,
+            "left_hand_thumb_1_link": 0.00,
+            "left_hand_thumb_2_link": 0.00,
+            "left_hand_middle_0_link": 0.00,
+            "left_hand_middle_1_link": 0.00,
+            "left_hand_index_0_link": 0.00,
+            "left_hand_index_1_link": 0.00,
+
+            "right_hand_palm_link": 0.00,
+            "right_hand_thumb_0_link": 0.00,
+            "right_hand_thumb_1_link": 0.00,
+            "right_hand_thumb_2_link": 0.00,
+            "right_hand_middle_0_link": 0.00,
+            "right_hand_middle_1_link": 0.00,
+            "right_hand_index_0_link": 0.00,
+            "right_hand_index_1_link": 0.00,
+        }
+
+        use_global_cumul: True
+        mesh_link_names: null # List[str]
+
+        cspace:
+            joint_names: [
+                "left_hip_pitch_joint",
+                "left_hip_roll_joint",
+                "left_hip_yaw_joint",
+                "left_knee_joint",
+                "left_ankle_pitch_joint",
+                'left_ankle_roll_joint', 
+                
+                'right_hip_pitch_joint',
+                'right_hip_roll_joint', 
+                'right_hip_yaw_joint',
+                'right_knee_joint', 
+                'right_ankle_pitch_joint', 
+                'right_ankle_roll_joint', 
+                
+                'waist_yaw_joint', 
+                'waist_roll_joint', 
+                'waist_pitch_joint', 
+                
+                'left_shoulder_pitch_joint', 
+                'left_shoulder_roll_joint', 
+                'left_shoulder_yaw_joint', 
+                'left_elbow_joint', 
+                'left_wrist_roll_joint', 
+                'left_wrist_pitch_joint', 
+                'left_wrist_yaw_joint', 
+
+                'right_shoulder_pitch_joint', 
+                'right_shoulder_roll_joint', 
+                'right_shoulder_yaw_joint', 
+                'right_elbow_joint', 
+                'right_wrist_roll_joint', 
+                'right_wrist_pitch_joint', 
+                'right_wrist_yaw_joint',
+
+                'left_hand_thumb_0_joint', 
+                'left_hand_thumb_1_joint', 
+                'left_hand_thumb_2_joint', 
+                'left_hand_middle_0_joint', 
+                'left_hand_middle_1_joint', 
+                'left_hand_index_0_joint',
+                "left_hand_index_1_joint" ,
+                
+                'right_hand_thumb_0_joint', 
+                'right_hand_thumb_1_joint', 
+                'right_hand_thumb_2_joint', 
+                'right_hand_middle_0_joint', 
+                'right_hand_middle_1_joint', 
+                'right_hand_index_0_joint',
+                "right_hand_index_1_joint" ,
+
+            ] # List[str]
+            retract_config: [0,0,0,0,0,0,
+                            0,0,0,0,0,0,
+                            0,0,0,
+                            0,0,0,0,0,0,0,
+                            0,0,0,0,0,0,0,
+                            0,0,0,0,0,0,0,
+                            0,0,0,0,0,0,0] # List[float]
+            null_space_weight: [1.0,1.0,1.0,1.0,1.0,1.0,
+                               1.0,1.0,1.0,1.0,1.0,1.0,
+                               1.0,1.0,1.0,
+                               1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                               1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                               1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                               1.0,1.0,1.0,1.0,1.0,1.0,1.0] # List[float]
+            cspace_distance_weight: [1.0,1.0,1.0,1.0,1.0,1.0,
+                                     1.0,1.0,1.0,1.0,1.0,1.0,
+                                     1.0,1.0,1.0,
+                                     1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                                     1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                                     1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                                     1.0,1.0,1.0,1.0,1.0,1.0,1.0] # List[float]
+            max_jerk: 500.0
+            max_acceleration: 10.0

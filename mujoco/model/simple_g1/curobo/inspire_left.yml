@@ -1,0 +1,139 @@
+##
+## Unitree Inspire Hand Configuration for CuRobo
+## Left hand only
+##
+robot_cfg:
+  # robot_color: [0.2, 0.3, 0.8, 1.0]
+  kinematics:
+    base_link: L_hand_base_link
+    external_robot_configs_path: robots/g1_inspire/curobo
+    external_asset_path: robots/g1_inspire
+    use_root_pose: True
+    hand_pose_transfer: 
+      L_hand_base_link:
+        r: [[-1.0, 0.0, 0.0], [0.0, -1.0, 0.0], [0.0, 0.0, 1.0]]
+        t: [0.0, 0.0, 0.0]
+    
+    # All links that need collision checking
+    collision_link_names:
+      - L_hand_base_link
+      - L_thumb_proximal_base
+      - L_thumb_proximal
+      - L_thumb_intermediate
+      - L_thumb_distal
+      - L_index_proximal
+      - L_index_intermediate
+      - L_middle_proximal
+      - L_middle_intermediate
+      - L_ring_proximal
+      - L_ring_intermediate
+      - L_pinky_proximal
+      - L_pinky_intermediate
+    
+    collision_sphere_buffer: 0.0
+    collision_spheres: spheres/inspire_left.yml
+    
+    # Primary end-effector
+    ee_link: L_hand_base_link
+    
+    # Contact points - ONLY fingertip links
+    link_names:
+      - L_thumb_distal
+      - L_index_intermediate
+      - L_middle_intermediate
+      - L_ring_intermediate
+      - L_pinky_intermediate
+    
+    # Self-collision buffer for each link
+    self_collision_buffer:
+      L_hand_base_link: 0.0
+      L_thumb_proximal_base: 0.0
+      L_thumb_proximal: 0.002
+      L_thumb_intermediate: 0.002
+      L_thumb_distal: 0.0
+      L_index_proximal: 0.002
+      L_index_intermediate: 0.0
+      L_middle_proximal: 0.002
+      L_middle_intermediate: 0.0
+      L_ring_proximal: 0.002
+      L_ring_intermediate: 0.0
+      L_pinky_proximal: 0.002
+      L_pinky_intermediate: 0.0
+    
+    # Adjacent links in kinematic chain don't collide
+    self_collision_ignore:
+      L_hand_base_link:
+        - L_thumb_proximal_base
+        - L_index_proximal
+        - L_middle_proximal
+        - L_ring_proximal
+        - L_pinky_proximal
+      L_thumb_proximal_base: [L_thumb_proximal]
+      L_thumb_proximal: [L_thumb_intermediate]
+      L_thumb_intermediate: [L_thumb_distal]
+      L_index_proximal: [L_index_intermediate]
+      L_middle_proximal: [L_middle_intermediate]
+      L_ring_proximal: [L_ring_intermediate]
+      L_pinky_proximal: [L_pinky_intermediate]
+    
+    # Path to G1 URDF
+    urdf_path: g1_29dof_with_inspire_hand.urdf
+    external_asset_path: robots/g1
+    external_robot_configs_path: robots/g1_inspire/curobo
+        
+    # Configuration space - 6 actuated DOF
+    cspace:
+      joint_names:
+        - L_thumb_proximal_yaw_joint      # Thumb opposition
+        - L_thumb_proximal_pitch_joint    # Thumb flexion
+        - L_index_proximal_joint          # Index flexion
+        - L_middle_proximal_joint         # Middle flexion
+        - L_ring_proximal_joint           # Ring flexion
+        - L_pinky_proximal_joint          # Pinky flexion
+      
+      # Weight for configuration space distance metric
+      cspace_distance_weight:
+        - 0.15  # Thumb yaw more important for grasp variety
+        - 0.1
+        - 0.1
+        - 0.1
+        - 0.1
+        - 0.1
+      
+      # Null space optimization weights
+      null_space_weight:
+        - 1.0
+        - 1.0
+        - 1.0
+        - 1.0
+        - 1.0
+        - 1.0
+      
+      # Safe collision-free retracted configuration
+      # Fingers partially open (not fully extended or closed)
+      retract_config:
+        - 0.0    # Thumb neutral opposition
+        - 0.3    # Thumb partially closed
+        - 0.5    # Fingers partially flexed
+        - 0.5
+        - 0.5
+        - 0.5
+      
+      max_acceleration: 15.0
+      max_jerk: 500.0
+    
+    # All links for visualization
+    mesh_link_names:
+      - L_hand_base_link
+      - L_thumb_proximal_base
+      - L_thumb_proximal
+      - L_thumb_intermediate
+      - L_thumb_distal
+      - L_index_proximal
+      - L_index_intermediate
+      - L_middle_proximal
+      - L_middle_intermediate
+      - L_ring_proximal
+      - L_ring_intermediate
+      - L_pinky_proximal
+      - L_pinky_intermediate

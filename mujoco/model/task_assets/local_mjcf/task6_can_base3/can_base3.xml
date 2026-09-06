@@ -1,0 +1,22 @@
+<mujoco model="task6_can_base3">
+  <compiler meshdir="../../" texturedir="../../"/>
+  <asset>
+    <mesh name="can_visual_mesh" file="converted/obj_071_can/480dcfcf2ff157f1/base3.obj" scale="0.05 0.05 0.05"/>
+    <mesh name="can_collision_mesh" file="converted/obj_071_can/10ed6810f62b7a67/base3.obj" scale="0.05 0.05 0.05"/>
+    <texture name="can_texture" type="2d" file="textures/obj_071_can/baseobj_3_480dcfcf2ff157f1_00_raw.png"/>
+    <material name="can_material" rgba="1 1 1 1" specular="0.2" shininess="0.35" texture="can_texture"/>
+  </asset>
+  <worldbody>
+    <body name="object">
+      <inertial pos="0.000213451 0.0492138 0.000202088"
+                quat="0.686331 0.683069 0.173175 -0.179933"
+                mass="0.380002942"
+                diaginertia="0.000358843 0.000353224 0.000128307"/>
+      <geom name="can_visual" type="mesh" mesh="can_visual_mesh"
+            material="can_material" contype="0" conaffinity="0" group="1" mass="0"/>
+      <geom name="can_collision" type="mesh" mesh="can_collision_mesh"
+            contype="1" conaffinity="1" condim="4"
+            friction="1 0.04 0.015" rgba="0 0 0 0" group="3"/>
+    </body>
+  </worldbody>
+</mujoco>

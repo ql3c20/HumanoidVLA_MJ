@@ -1,0 +1,139 @@
+##
+## Unitree Inspire Hand Configuration for CuRobo
+## Left hand only (for right hand, create inspire_right.yml with R_ prefix)
+##
+robot_cfg:
+  kinematics:
+    base_link: R_hand_base_link
+    external_robot_configs_path: robots/g1_inspire/curobo
+    external_asset_path: robots/g1_inspire
+    use_root_pose: True
+    hand_pose_transfer: 
+      R_hand_base_link:
+        r: [[-1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, -1.0]]
+        t: [0.0, 0.0, 0.0]  # Offset to palm center (midpoint of finger bases)
+    
+    # All links that need collision checking
+    collision_link_names:
+      - R_hand_base_link
+      - R_thumb_proximal_base
+      - R_thumb_proximal
+      - R_thumb_intermediate
+      - R_thumb_distal
+      - R_index_proximal
+      - R_index_intermediate
+      - R_middle_proximal
+      - R_middle_intermediate
+      - R_ring_proximal
+      - R_ring_intermediate
+      - R_pinky_proximal
+      - R_pinky_intermediate
+    
+    collision_sphere_buffer: 0.0
+    collision_spheres: spheres/inspire_right.yml
+    
+    # Primary end-effector
+    ee_link: R_hand_base_link
+    
+    # Contact points - ONLY fingertip links
+    link_names:
+      - R_thumb_distal
+      - R_index_intermediate
+      - R_middle_intermediate
+      - R_ring_intermediate
+      - R_pinky_intermediate
+    
+    # Self-collision buffer for each link
+    self_collision_buffer:
+      R_hand_base_link: 0.0
+      R_thumb_proximal_base: 0.0
+      R_thumb_proximal: 0.002
+      R_thumb_intermediate: 0.002
+      R_thumb_distal: 0.0
+      R_index_proximal: 0.002
+      R_index_intermediate: 0.0
+      R_middle_proximal: 0.002
+      R_middle_intermediate: 0.0
+      R_ring_proximal: 0.002
+      R_ring_intermediate: 0.0
+      R_pinky_proximal: 0.002
+      R_pinky_intermediate: 0.0
+    
+    # Adjacent links in kinematic chain don't collide
+    self_collision_ignore:
+      R_hand_base_link:
+        - R_thumb_proximal_base
+        - R_index_proximal
+        - R_middle_proximal
+        - R_ring_proximal
+        - R_pinky_proximal
+      R_thumb_proximal_base: [R_thumb_proximal]
+      R_thumb_proximal: [R_thumb_intermediate]
+      R_thumb_intermediate: [R_thumb_distal]
+      R_index_proximal: [R_index_intermediate]
+      R_middle_proximal: [R_middle_intermediate]
+      R_ring_proximal: [R_ring_intermediate]
+      R_pinky_proximal: [R_pinky_intermediate]
+    
+    # Path to G1 URDF
+    urdf_path: g1_29dof_with_inspire_hand.urdf
+    external_asset_path: robots/g1
+    external_robot_configs_path: robots/g1/curobo
+
+    
+    # Configuration space - 6 actuated DOF
+    cspace:
+      joint_names:
+        - R_thumb_proximal_yaw_joint      # Thumb opposition
+        - R_thumb_proximal_pitch_joint    # Thumb flexion
+        - R_index_proximal_joint          # Index flexion
+        - R_middle_proximal_joint         # Middle flexion
+        - R_ring_proximal_joint           # Ring flexion
+        - R_pinky_proximal_joint          # Pinky flexion
+      
+      # Weight for configuration space distance metric
+      cspace_distance_weight:
+        - 0.15  # Thumb yaw more important for grasp variety
+        - 0.1
+        - 0.1
+        - 0.1
+        - 0.1
+        - 0.1
+      
+      # Null space optimization weights
+      null_space_weight:
+        - 1.0
+        - 1.0
+        - 1.0
+        - 1.0
+        - 1.0
+        - 1.0
+      
+      # Safe collision-free retracted configuration
+      # Fingers partially open (not fully extended or closed)
+      retract_config:
+        - 0.0    # Thumb neutral opposition
+        - 0.3    # Thumb partially closed
+        - 0.5    # Fingers partially flexed
+        - 0.5
+        - 0.5
+        - 0.5
+      
+      max_acceleration: 15.0
+      max_jerk: 500.0
+    
+    # All links for visualization
+    mesh_link_names:
+      - R_hand_base_link
+      - R_thumb_proximal_base
+      - R_thumb_proximal
+      - R_thumb_intermediate
+      - R_thumb_distal
+      - R_index_proximal
+      - R_index_intermediate
+      - R_middle_proximal
+      - R_middle_intermediate
+      - R_ring_proximal
+      - R_ring_intermediate
+      - R_pinky_proximal
+      - R_pinky_intermediate

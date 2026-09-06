@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="2real_round_table_scaled_visual_05pct">
+  <compiler angle="radian" autolimits="true" meshdir="." texturedir="." />
+  <asset>
+    <mesh name="round_table_visual_mesh" file="base_visual_05pct.obj" scale="0.3743956185 0.3951534170 0.3734410835" />
+    <texture name="round_table_diffuse" type="2d" file="texture_diffuse.png" />
+    <material name="round_table_material" texture="round_table_diffuse" rgba="1 1 1 1" specular="0.28" shininess="0.35" />
+  </asset>
+  <worldbody>
+    <body name="object">
+      <geom name="round_table_visual" type="mesh" mesh="round_table_visual_mesh" euler="1.570796326794897 0 0" material="round_table_material" group="1" contype="0" conaffinity="0" mass="0" />
+      <geom name="top_collision" type="cylinder" pos="0 0 0.735" size="0.35 0.015" group="3" contype="1" conaffinity="1" condim="4" friction="1.0 0.05 0.01" solref="0.004 1.0" solimp="0.95 0.99 0.001" rgba="0 0 0 0" />
+      <geom name="pedestal_collision" type="cylinder" pos="0 0 0.375" size="0.035 0.345" group="3" contype="1" conaffinity="1" condim="3" friction="0.8 0.03 0.01" solref="0.006 1.0" solimp="0.95 0.99 0.001" rgba="0 0 0 0" />
+      <geom name="base_foot_x_positive_collision" type="box" pos="0.150 0 0.015" size="0.150 0.0175 0.015" group="3" contype="1" conaffinity="1" condim="3" friction="0.8 0.03 0.01" solref="0.006 1.0" solimp="0.95 0.99 0.001" rgba="0 0 0 0" />
+      <geom name="base_foot_x_negative_collision" type="box" pos="-0.150 0 0.015" size="0.150 0.0175 0.015" euler="0 0 3.141592653589793" group="3" contype="1" conaffinity="1" condim="3" friction="0.8 0.03 0.01" solref="0.006 1.0" solimp="0.95 0.99 0.001" rgba="0 0 0 0" />
+      <geom name="base_foot_y_positive_collision" type="box" pos="0 0.150 0.015" size="0.0175 0.150 0.015" group="3" contype="1" conaffinity="1" condim="3" friction="0.8 0.03 0.01" solref="0.006 1.0" solimp="0.95 0.99 0.001" rgba="0 0 0 0" />
+      <geom name="base_foot_y_negative_collision" type="box" pos="0 -0.150 0.015" size="0.0175 0.150 0.015" group="3" contype="1" conaffinity="1" condim="3" friction="0.8 0.03 0.01" solref="0.006 1.0" solimp="0.95 0.99 0.001" rgba="0 0 0 0" />
+    </body>
+  </worldbody>
+</mujoco>

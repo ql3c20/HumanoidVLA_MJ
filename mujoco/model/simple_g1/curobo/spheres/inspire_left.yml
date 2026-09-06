@@ -1,0 +1,102 @@
+collision_link_names:
+  - L_hand_base_link
+  - L_thumb_proximal_base
+  - L_thumb_proximal
+  - L_thumb_intermediate
+  - L_thumb_distal
+  - L_index_proximal
+  - L_index_intermediate
+  - L_middle_proximal
+  - L_middle_intermediate
+  - L_ring_proximal
+  - L_ring_intermediate
+  - L_pinky_proximal
+  - L_pinky_intermediate
+
+collision_spheres:
+
+  # Palm: X axis along palm normal, positive points into the palm
+  #       Y axis along fingers, positive points towards wrist
+  #       Z axis along thumb, positive points towards thumb
+  L_hand_base_link:
+  - "center": [0.0, -0.02, 0.0]
+    "radius": 0.022
+  - "center": [-0.003, -0.06, 0.0]
+    "radius": 0.018
+  - "center": [0.001, -0.10, 0.015]
+    "radius": 0.015
+  - "center": [0.001, -0.10, -0.017]
+    "radius": 0.015
+
+  # Thumb: X axis along fingers, positive points towards wrist
+  #        Y axis along thumb, positive points away from thumb
+  #        Z axis along palm, positive points out of the palm
+
+  L_thumb_proximal_base:
+  - "center": [-0.001, 0.0, 0.0]
+    "radius": 0.005
+  
+  L_thumb_proximal:
+  - "center": [0.0, -0.005, -0.01]
+    "radius": 0.007
+  - "center": [0.025, -0.02, -0.01]
+    "radius": 0.007
+  
+  L_thumb_intermediate:
+  - "center": [0.015, -0.005, -0.007]
+    "radius": 0.005
+  
+  L_thumb_distal:
+  - "center": [0.009, -0.003, -0.007]
+    "radius": 0.005
+  
+  # Fingers: X axis along palm normal, positive points into the palm
+  #          Y axis along fingers, positive points towards wrist
+  #          Z axis along thumb, positive points towards thumb
+  L_index_proximal:
+  - "center": [0.003, -0.01, -0.005]
+    "radius": 0.005
+  - "center": [0.003, -0.02, -0.005]
+    "radius": 0.005
+
+  L_index_intermediate:
+  - "center": [0.003, -0.01, -0.005]
+    "radius": 0.005
+  - "center": [-0.0005, -0.035, -0.005]
+    "radius": 0.005
+
+  L_middle_proximal:
+  - "center": [0.003, -0.01, -0.005]
+    "radius": 0.005
+  - "center": [0.003, -0.02, -0.005]
+    "radius": 0.005
+  
+  L_middle_intermediate:
+  - "center": [0.003, -0.01, -0.005]
+    "radius": 0.005
+  - "center": [-0.0005, -0.035, -0.005]
+    "radius": 0.005
+  
+  L_ring_proximal:
+  - "center": [0.003, -0.01, -0.005]
+    "radius": 0.005
+  - "center": [0.003, -0.02, -0.005]
+    "radius": 0.005
+  
+  L_ring_intermediate:
+  - "center": [0.003, -0.01, -0.005]
+    "radius": 0.005
+  - "center": [-0.0004, -0.035, -0.005]
+    "radius": 0.005
+  
+  L_pinky_proximal:
+  - "center": [0.003, -0.01, -0.005]
+    "radius": 0.005
+  - "center": [0.003, -0.02, -0.005]
+    "radius": 0.005
+  
+  L_pinky_intermediate:
+  - "center": [0.003, -0.007, -0.005]
+    "radius": 0.005
+  - "center": [0.0006, -0.028, -0.005]
+    "radius": 0.004

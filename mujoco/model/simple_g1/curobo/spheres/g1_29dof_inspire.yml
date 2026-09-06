@@ -1,0 +1,180 @@
+collision_spheres:
+  left_shoulder_pitch_link:
+    - "center": [-0.0, 0.04, -0.014]
+      "radius": 0.04007
+  left_shoulder_roll_link:
+    - "center": [-0.001, 0.006, -0.08]
+      "radius": 0.0326
+    - "center": [0.012, 0.0, -0.056]
+      "radius": 0.02
+    - "center": [-0.006, 0.021, -0.059]
+      "radius": 0.02
+  left_shoulder_yaw_link:
+    - "center": [0.011, -0.0, -0.081]
+      "radius": 0.04284
+    - "center": [-0.015, 0.002, -0.027]
+      "radius": 0.03932
+  left_elbow_link:
+    - "center": [0.071, 0.002, -0.011]
+      "radius": 0.03819
+    - "center": [0.06, 0.015, -0.01]
+      "radius": 0.02934
+  left_wrist_pitch_link:
+    - "center": [0.053, -0.001, -0.001]
+      "radius": 0.03112
+    - "center": [-0.003, -0.001, 0.003]
+      "radius": 0.03112
+  torso_link:
+    - "center": [-0.01, -0.0, 0.13]
+      "radius": 0.105
+  right_shoulder_pitch_link:
+    - "center": [-0.0, -0.038, -0.016]
+      "radius": 0.04007
+  right_shoulder_roll_link:
+    - "center": [0.001, -0.006, -0.08]
+      "radius": 0.0326
+    - "center": [0.002, -0.011, -0.065]
+      "radius": 0.02923
+    - "center": [-0.008, -0.002, -0.061]
+      "radius": 0.02518
+  right_shoulder_yaw_link:
+    - "center": [0.015, 0.003, -0.084]
+      "radius": 0.03284
+    - "center": [-0.006, 0.001, -0.019]
+      "radius": 0.03284
+  right_elbow_link:
+    - "center": [0.071, -0.002, -0.011]
+      "radius": 0.03819
+  right_wrist_pitch_link:
+    - "center": [0.006, 0.001, 0.001]
+      "radius": 0.03112
+    - "center": [0.049, -0.002, -0.001]
+      "radius": 0.03112
+
+  L_hand_base_link:
+  - "center": [0.0, -0.02, 0.0]
+    "radius": 0.022
+  - "center": [-0.003, -0.06, 0.0]
+    "radius": 0.018
+  - "center": [0.001, -0.10, 0.015]
+    "radius": 0.015
+  - "center": [0.001, -0.10, -0.017]
+    "radius": 0.015
+  L_thumb_proximal_base:
+  - "center": [-0.001, 0.0, 0.0]
+    "radius": 0.005
+  L_thumb_proximal:
+  - "center": [0.0, -0.005, -0.01]
+    "radius": 0.007
+  - "center": [0.025, -0.02, -0.01]
+    "radius": 0.007
+  L_thumb_intermediate:
+  - "center": [0.015, -0.005, -0.007]
+    "radius": 0.005
+  L_thumb_distal:
+  - "center": [0.009, -0.003, -0.007]
+    "radius": 0.005
+  L_index_proximal:
+  - "center": [0.003, -0.01, -0.005]
+    "radius": 0.005
+  - "center": [0.003, -0.02, -0.005]
+    "radius": 0.005
+  L_index_intermediate:
+  - "center": [0.003, -0.01, -0.005]
+    "radius": 0.005
+  - "center": [-0.0005, -0.035, -0.005]
+    "radius": 0.005
+  L_middle_proximal:
+  - "center": [0.003, -0.01, -0.005]
+    "radius": 0.005
+  - "center": [0.003, -0.02, -0.005]
+    "radius": 0.005
+  L_middle_intermediate:
+  - "center": [0.003, -0.01, -0.005]
+    "radius": 0.005
+  - "center": [-0.0005, -0.035, -0.005]
+    "radius": 0.005
+  L_ring_proximal:
+  - "center": [0.003, -0.01, -0.005]
+    "radius": 0.005
+  - "center": [0.003, -0.02, -0.005]
+    "radius": 0.005
+  L_ring_intermediate:
+  - "center": [0.003, -0.01, -0.005]
+    "radius": 0.005
+  - "center": [-0.0004, -0.035, -0.005]
+    "radius": 0.005
+  L_pinky_proximal:
+  - "center": [0.003, -0.01, -0.005]
+    "radius": 0.005
+  - "center": [0.003, -0.02, -0.005]
+    "radius": 0.005
+  L_pinky_intermediate:
+  - "center": [0.003, -0.007, -0.005]
+    "radius": 0.005
+  - "center": [0.0006, -0.028, -0.005]
+    "radius": 0.004
+
+  R_hand_base_link:
+  - "center": [0.0, -0.02, 0.0]
+    "radius": 0.022
+  - "center": [-0.003, -0.06, 0.0]
+    "radius": 0.018
+  - "center": [0.001, -0.10, -0.015]
+    "radius": 0.015
+  - "center": [0.001, -0.10, 0.017]
+    "radius": 0.015
+  R_thumb_proximal_base:
+  - "center": [-0.001, 0.0, 0.0]
+    "radius": 0.005
+  R_thumb_proximal:
+  - "center": [0.0, 0.005, -0.01]
+    "radius": 0.007
+  - "center": [0.025, 0.02, -0.01]
+    "radius": 0.007
+  R_thumb_intermediate:
+  - "center": [0.015, 0.005, -0.007]
+    "radius": 0.005
+  R_thumb_distal:
+  - "center": [0.009, 0.003, -0.007]
+    "radius": 0.005
+  R_index_proximal:
+  - "center": [0.003, 0.01, -0.005]
+    "radius": 0.005
+  - "center": [0.003, 0.02, -0.005]
+    "radius": 0.005
+  R_index_intermediate:
+  - "center": [0.003, 0.01, -0.005]
+    "radius": 0.005
+  - "center": [-0.0008, 0.035, -0.005]
+    "radius": 0.005
+  R_middle_proximal:
+  - "center": [0.003, 0.01, -0.005]
+    "radius": 0.005
+  - "center": [0.003, 0.02, -0.005]
+    "radius": 0.005
+  R_middle_intermediate:
+  - "center": [0.003, 0.01, -0.005]
+    "radius": 0.005
+  - "center": [-0.0005, 0.035, -0.005]
+    "radius": 0.005
+  R_ring_proximal:
+  - "center": [0.003, 0.01, -0.005]
+    "radius": 0.005
+  - "center": [0.003, 0.02, -0.005]
+    "radius": 0.005
+  R_ring_intermediate:
+  - "center": [0.003, 0.01, -0.005]
+    "radius": 0.005
+  - "center": [-0.0004, 0.035, -0.005]
+    "radius": 0.005
+  R_pinky_proximal:
+  - "center": [0.003, 0.01, -0.005]
+    "radius": 0.005
+  - "center": [0.003, 0.02, -0.005]
+    "radius": 0.005
+  R_pinky_intermediate:
+  - "center": [0.003, 0.007, -0.005]
+    "radius": 0.005
+  - "center": [0.0006, 0.028, -0.005]
+    "radius": 0.004

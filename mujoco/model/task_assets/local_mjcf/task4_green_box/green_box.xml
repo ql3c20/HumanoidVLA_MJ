@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mujoco model="task4_green_box_primitive">
+  <compiler angle="radian" autolimits="true"/>
+  <asset>
+    <material name="green_box_material" rgba="0.08 0.55 0.12 1" specular="0.18" shininess="0.25"/>
+  </asset>
+  <worldbody>
+    <body name="object">
+      <!-- Dimensions reproduce collision_coacd/coacd_summary.json exactly. -->
+      <geom name="floor_collision" type="box" pos="0 0 0.004"
+            size="0.1384493992 0.183 0.004" material="green_box_material"
+            group="1" contype="1" conaffinity="1" condim="4"
+            friction="1.0 0.05 0.01" solref="0.004 1.0" solimp="0.95 0.99 0.001"/>
+      <geom name="wall_x_negative_collision" type="box" pos="-0.1304493992 0 0.06"
+            size="0.008 0.183 0.06" material="green_box_material"
+            group="1" contype="1" conaffinity="1" condim="4"
+            friction="1.0 0.05 0.01" solref="0.004 1.0" solimp="0.95 0.99 0.001"/>
+      <geom name="wall_x_positive_collision" type="box" pos="0.1304493992 0 0.06"
+            size="0.008 0.183 0.06" material="green_box_material"
+            group="1" contype="1" conaffinity="1" condim="4"
+            friction="1.0 0.05 0.01" solref="0.004 1.0" solimp="0.95 0.99 0.001"/>
+      <geom name="wall_y_negative_collision" type="box" pos="0 -0.175 0.06"
+            size="0.1224493992 0.008 0.06" material="green_box_material"
+            group="1" contype="1" conaffinity="1" condim="4"
+            friction="1.0 0.05 0.01" solref="0.004 1.0" solimp="0.95 0.99 0.001"/>
+      <geom name="wall_y_positive_collision" type="box" pos="0 0.175 0.06"
+            size="0.1224493992 0.008 0.06" material="green_box_material"
+            group="1" contype="1" conaffinity="1" condim="4"
+            friction="1.0 0.05 0.01" solref="0.004 1.0" solimp="0.95 0.99 0.001"/>
+    </body>
+  </worldbody>
+</mujoco>

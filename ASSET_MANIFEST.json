@@ -1,0 +1,1462 @@
+{
+  "task_xmls": [
+    "mujoco/model/task_assets/local_mjcf/primitive_round_table_green_cylinder/round_table.xml",
+    "mujoco/model/task_assets/local_mjcf/primitive_round_table_green_cylinder/green_cylinder.xml",
+    "mujoco/model/task_assets/2real_asset/round_table/round_table_visual_05pct.xml",
+    "mujoco/model/task_assets/2real_asset/trash/step_trash_can.xml",
+    "mujoco/model/task_assets/local_mjcf/task4_bottle/bottle.xml",
+    "mujoco/model/task_assets/local_mjcf/task4_green_box/green_box.xml",
+    "mujoco/model/task_assets/local_mjcf/drawer/drawer.xml",
+    "mujoco/model/task_assets/2real_asset/shelf/shelf_visual_01pct.xml",
+    "mujoco/model/task_assets/local_mjcf/task6_can_base3/can_base3.xml"
+  ],
+  "files": [
+    {
+      "path": "mujoco/model/task_assets/local_mjcf/primitive_round_table_green_cylinder/round_table.xml",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/local_mjcf/primitive_round_table_green_cylinder/round_table.xml",
+      "bytes": 3986,
+      "sha256": "15dedb1930466d0f9bac0c27dafea3a85a2143e5cdcb7cc23cfeb8ac6a3e2e1c"
+    },
+    {
+      "path": "mujoco/model/task_assets/local_mjcf/primitive_round_table_green_cylinder/assets/visual/table_tapered_underside.obj",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/local_mjcf/primitive_round_table_green_cylinder/assets/visual/table_tapered_underside.obj",
+      "bytes": 17883,
+      "sha256": "37c1374791627f13c7f252bf3725aca9ffb51b622466ba3f239c5e287c23c8be"
+    },
+    {
+      "path": "mujoco/model/task_assets/local_mjcf/primitive_round_table_green_cylinder/assets/visual/table_trapezoid_foot.obj",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/local_mjcf/primitive_round_table_green_cylinder/assets/visual/table_trapezoid_foot.obj",
+      "bytes": 406,
+      "sha256": "fbe8f027a87b1643999cea59e7d055271eabcb7c30d5c5346c1722e095bc4b49"
+    },
+    {
+      "path": "mujoco/model/task_assets/local_mjcf/primitive_round_table_green_cylinder/green_cylinder.xml",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/local_mjcf/primitive_round_table_green_cylinder/green_cylinder.xml",
+      "bytes": 942,
+      "sha256": "725df4d733814f560a64fa9eef5d8c9e7601035517ab3a61f8715b7e67c81e6c"
+    },
+    {
+      "path": "mujoco/model/task_assets/2real_asset/round_table/round_table_visual_05pct.xml",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/2real_asset/round_table/round_table_visual_05pct.xml",
+      "bytes": 2230,
+      "sha256": "6deee51f101278e8794e2a48c650e1b79fb4216c6352caf6efd22bd82f5c3878"
+    },
+    {
+      "path": "mujoco/model/task_assets/2real_asset/round_table/base_visual_05pct.obj",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/2real_asset/round_table/base_visual_05pct.obj",
+      "bytes": 5596759,
+      "sha256": "a6a7d9c3c610685f580af50649c9898b0fee763430b71f71e645e86ae8219078"
+    },
+    {
+      "path": "mujoco/model/task_assets/2real_asset/round_table/texture_diffuse.png",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/2real_asset/round_table/texture_diffuse.png",
+      "bytes": 2565028,
+      "sha256": "6788d7a14392ab4fd0e693a1ee3dd17413b2d8fff7bac146b8636432adba4d3d"
+    },
+    {
+      "path": "mujoco/model/task_assets/2real_asset/trash/step_trash_can.xml",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/2real_asset/trash/step_trash_can.xml",
+      "bytes": 5738,
+      "sha256": "8b389616557ec4d1186f2dd9afd2e9be1738e20a4b997e836de958adbdd9e725"
+    },
+    {
+      "path": "mujoco/model/task_assets/2real_asset/trash/meshes/root_0.obj",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/2real_asset/trash/meshes/root_0.obj",
+      "bytes": 22079737,
+      "sha256": "f9fa8b2105e52ff105b078909aeb9ce9471167b77f1464399c3fd5df9a30dfe3"
+    },
+    {
+      "path": "mujoco/model/task_assets/2real_asset/trash/meshes/root_1.obj",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/2real_asset/trash/meshes/root_1.obj",
+      "bytes": 6595,
+      "sha256": "c8049fbdd1f790c32bc25013903a8e8d2686083b628d3f19b8d824718d007444"
+    },
+    {
+      "path": "mujoco/model/task_assets/2real_asset/trash/meshes/root_2.obj",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/2real_asset/trash/meshes/root_2.obj",
+      "bytes": 4801904,
+      "sha256": "37016f9ab600b039041407461cb27e52e2e5790c8599789c93240018ad8bbff8"
+    },
+    {
+      "path": "mujoco/model/task_assets/2real_asset/trash/meshes/root_3.obj",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/2real_asset/trash/meshes/root_3.obj",
+      "bytes": 3418365,
+      "sha256": "354f7741f2021bbe7d3d977a2b8b040af7e8cdc0886a13063c8f1bca20c5de8e"
+    },
+    {
+      "path": "mujoco/model/task_assets/2real_asset/trash/meshes/root_4.obj",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/2real_asset/trash/meshes/root_4.obj",
+      "bytes": 6914033,
+      "sha256": "5371c8a72e5334a85cd2a367fc102ff3011b5180c867f0316cfc27113a0feb13"
+    },
+    {
+      "path": "mujoco/model/task_assets/2real_asset/trash/textures/trash_silver_brushed.png",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/2real_asset/trash/textures/trash_silver_brushed.png",
+      "bytes": 533778,
+      "sha256": "c1263dd8267167de62220d0bcb3af67435cae5419f1806cee24615b9cc034c8f"
+    },
+    {
+      "path": "mujoco/model/task_assets/local_mjcf/task4_bottle/bottle.xml",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/local_mjcf/task4_bottle/bottle.xml",
+      "bytes": 919,
+      "sha256": "e3997d6e9896d5cd71b3e605c0f7f434869c3ba7317d130705fff0d06b5f9244"
+    },
+    {
+      "path": "mujoco/model/task_assets/converted/obj_001_bottle/cd35d5c75de8221b/base13.obj",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/converted/obj_001_bottle/cd35d5c75de8221b/base13.obj",
+      "bytes": 1228361,
+      "sha256": "8f478617349b661c1b571ec4e248fe081317b1642be33e92238e5b74a5d060bc"
+    },
+    {
+      "path": "mujoco/model/task_assets/textures/obj_001_bottle/baseobj_13_cd35d5c75de8221b_00_raw.png",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/textures/obj_001_bottle/baseobj_13_cd35d5c75de8221b_00_raw.png",
+      "bytes": 587349,
+      "sha256": "6a8d2d0fa9f06f683a1051e525ead7c13fd435a18eb42b0ec4b8984b8b7911ca"
+    },
+    {
+      "path": "mujoco/model/task_assets/local_mjcf/task4_green_box/green_box.xml",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/local_mjcf/task4_green_box/green_box.xml",
+      "bytes": 1855,
+      "sha256": "d300601e399c64c25afdbc3c770c8c0d2377a7a7f43490563c1a65bae991513c"
+    },
+    {
+      "path": "mujoco/model/task_assets/local_mjcf/drawer/drawer.xml",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/local_mjcf/drawer/drawer.xml",
+      "bytes": 18781,
+      "sha256": "77991d2ec995ccce01d7de0b97fab05e5d6815be6c95e087a63b18356c83faa8"
+    },
+    {
+      "path": "mujoco/model/task_assets/local_mjcf/drawer/assets/textures/oak_veneer_01_diff_1k.png",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/local_mjcf/drawer/assets/textures/oak_veneer_01_diff_1k.png",
+      "bytes": 1566239,
+      "sha256": "251341cac5fdc701297e5615515a9421737024d8be911cbc1e24115a04b70a1e"
+    },
+    {
+      "path": "mujoco/model/task_assets/local_mjcf/drawer/assets/visual/drawer_base.stl",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/local_mjcf/drawer/assets/visual/drawer_base.stl",
+      "bytes": 1884,
+      "sha256": "bb1540e2b5baa581c05a393e76aa868efba5eb877d603f3b691191f4c90bb404"
+    },
+    {
+      "path": "mujoco/model/task_assets/local_mjcf/drawer/assets/visual/drawer_upper.stl",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/local_mjcf/drawer/assets/visual/drawer_upper.stl",
+      "bytes": 18584,
+      "sha256": "ea80102f9fe731acffabe24ea97936943171397ca562fcce0632d769945c4d4d"
+    },
+    {
+      "path": "mujoco/model/task_assets/local_mjcf/drawer/assets/visual/drawer_middle.stl",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/local_mjcf/drawer/assets/visual/drawer_middle.stl",
+      "bytes": 4084,
+      "sha256": "40554f9d9cb6b9420446ad99ae4dd53999e7ab802a305ee43ac422873fd7110d"
+    },
+    {
+      "path": "mujoco/model/task_assets/local_mjcf/drawer/assets/visual/drawer_lower.stl",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/local_mjcf/drawer/assets/visual/drawer_lower.stl",
+      "bytes": 4084,
+      "sha256": "d5d30944ecd670f126638b2bace127a02640b10d1850a9d544c18be4ebed9ae2"
+    },
+    {
+      "path": "mujoco/model/task_assets/2real_asset/shelf/shelf_visual_01pct.xml",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/2real_asset/shelf/shelf_visual_01pct.xml",
+      "bytes": 3847,
+      "sha256": "4add8c71ddf414320a5ba1371690ef31c1aaf0c78ba48a5a3de4e32c120cf8a7"
+    },
+    {
+      "path": "mujoco/model/task_assets/2real_asset/shelf/texture_diffuse.png",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/2real_asset/shelf/texture_diffuse.png",
+      "bytes": 2997304,
+      "sha256": "855afc3749e4d483e49cada24be5ce8644c0c3fa1d61a060376079575cfbb11f"
+    },
+    {
+      "path": "mujoco/model/task_assets/2real_asset/shelf/base_visual_01pct_frame.obj",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/2real_asset/shelf/base_visual_01pct_frame.obj",
+      "bytes": 2295,
+      "sha256": "c312a42a7d7b405a5c86dada48b21d30eb16776ee8887dc01f5702a44a0a4a66"
+    },
+    {
+      "path": "mujoco/model/task_assets/2real_asset/shelf/base_visual_01pct_grid.obj",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/2real_asset/shelf/base_visual_01pct_grid.obj",
+      "bytes": 198181,
+      "sha256": "a66336d2b7f1aa2d7e502cc021392e3827e2dd245798ce6b453514e109f26387"
+    },
+    {
+      "path": "mujoco/model/task_assets/2real_asset/shelf/base_visual_01pct_rims.obj",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/2real_asset/shelf/base_visual_01pct_rims.obj",
+      "bytes": 6056,
+      "sha256": "615470f721f0e23c25da4baa6f73e8f96df90c3ce7271f701ea4df5549314df5"
+    },
+    {
+      "path": "mujoco/model/task_assets/local_mjcf/task6_can_base3/can_base3.xml",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/local_mjcf/task6_can_base3/can_base3.xml",
+      "bytes": 1181,
+      "sha256": "8b75df76f5b2411053c4f4cc5adc30034d8a7324ee7d3f6dd431bb72e96e05c7"
+    },
+    {
+      "path": "mujoco/model/task_assets/converted/obj_071_can/480dcfcf2ff157f1/base3.obj",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/converted/obj_071_can/480dcfcf2ff157f1/base3.obj",
+      "bytes": 2603284,
+      "sha256": "730b3a625bf84a11f8aaeea247397f32b3a9fc233a19c3be8e6fb418715aef77"
+    },
+    {
+      "path": "mujoco/model/task_assets/converted/obj_071_can/10ed6810f62b7a67/base3.obj",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/converted/obj_071_can/10ed6810f62b7a67/base3.obj",
+      "bytes": 945532,
+      "sha256": "58ec27ecbb61c20d6c9d9acd264bc9311e5879e9513dcb30a8db5f050e247162"
+    },
+    {
+      "path": "mujoco/model/task_assets/textures/obj_071_can/baseobj_3_480dcfcf2ff157f1_00_raw.png",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/textures/obj_071_can/baseobj_3_480dcfcf2ff157f1_00_raw.png",
+      "bytes": 2301359,
+      "sha256": "04bff505bb2943441ba5325b42e8cbdc95b38c19ddf4f9ec0b548b02f419eb83"
+    },
+    {
+      "path": "mujoco/model/g1/g1_29dof_with_hand.xml",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/g1_29dof_with_hand.xml",
+      "bytes": 55007,
+      "sha256": "706596a857f29fd9097087fee0a50017bdf8addccf4cd47fc3244f50a33005ac"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/pelvis.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/pelvis.STL",
+      "bytes": 1060884,
+      "sha256": "5ba6bbc888e630550140d3c26763f10206da8c8bd30ed886b8ede41c61f57a31"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/pelvis_contour_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/pelvis_contour_link.STL",
+      "bytes": 1805184,
+      "sha256": "5cc5c2c7a312329e3feeb2b03d3fc09fc29705bd01864f6767e51be959662420"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/left_hip_pitch_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/left_hip_pitch_link.STL",
+      "bytes": 181684,
+      "sha256": "4725168105ee768ee31638ef22b53f6be2d7641bfd7cfefe803488d884776fa4"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/left_hip_roll_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/left_hip_roll_link.STL",
+      "bytes": 192184,
+      "sha256": "91f25922ee8a7c3152790051bebad17b4d9cd243569c38fe340285ff93a97acf"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/left_hip_yaw_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/left_hip_yaw_link.STL",
+      "bytes": 296284,
+      "sha256": "a16d88aa6ddac8083aa7ad55ed317bea44b1fa003d314fba88965b7ed0f3b55b"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/left_knee_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/left_knee_link.STL",
+      "bytes": 854884,
+      "sha256": "8d92b9e3d3a636761150bb8025e32514c4602b91c7028d523ee42b3e632de477"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/left_ankle_pitch_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/left_ankle_pitch_link.STL",
+      "bytes": 71184,
+      "sha256": "d49e3abc6f5b12e532062cd575b87b5ef40cd2a3fc18f54a1ca5bba4f773d51d"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/left_ankle_roll_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/left_ankle_roll_link.STL",
+      "bytes": 653384,
+      "sha256": "c4092af943141d4d9f74232f3cfa345afc6565f46a077793b8ae0e68b39dc33f"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/right_hip_pitch_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/right_hip_pitch_link.STL",
+      "bytes": 181284,
+      "sha256": "e4f3c99d7f4a7d34eadbef9461fc66e3486cb5442db1ec50c86317d459f1a9c6"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/right_hip_roll_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/right_hip_roll_link.STL",
+      "bytes": 192684,
+      "sha256": "4c254ef66a356f492947f360dd931965477b631e3fcc841f91ccc46d945d54f6"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/right_hip_yaw_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/right_hip_yaw_link.STL",
+      "bytes": 296284,
+      "sha256": "e479c2936ca2057e9eb2f7dff6c189b7419d7b8484dea0b298cbb36a2a6aa668"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/right_knee_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/right_knee_link.STL",
+      "bytes": 852284,
+      "sha256": "63c4008449c9bbe701a6e2b557b7a252e90cf3a5abcf54cee46862b9a69f8ec8"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/right_ankle_pitch_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/right_ankle_pitch_link.STL",
+      "bytes": 71184,
+      "sha256": "15be426539ec1be70246d4d82a168806db64a41301af8b35c197a33348c787a9"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/right_ankle_roll_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/right_ankle_roll_link.STL",
+      "bytes": 653784,
+      "sha256": "4b66222ea56653e627711b56d0a8949b4920da5df091da0ceb343f54e884e3a5"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/waist_yaw_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/waist_yaw_link.STL",
+      "bytes": 336284,
+      "sha256": "2883f20e03f09b669b5b4ce10677ee6b5191c0934b584d7cbaef2d0662856ffb"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/waist_roll_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/waist_roll_link.STL",
+      "bytes": 24184,
+      "sha256": "34f0aa73f41131230be4d25876c944fdf6c24d62553f199ff8b980c15e8913df"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/torso_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/torso_link.STL",
+      "bytes": 2232984,
+      "sha256": "e96d023f0368a4e3450b86ca5d4f10227d8141156a373e7da8cb3c93266523e0"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/logo_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/logo_link.STL",
+      "bytes": 243384,
+      "sha256": "8571a0a19bc4916fa55f91449f51d5fdefd751000054865a842449429d5f155b"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/head_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/head_link.STL",
+      "bytes": 932784,
+      "sha256": "005fb67fbd3eff94aa8bf4a6e83238174e9f91b6721f7111594322f223724411"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/waist_support_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/waist_support_link.STL",
+      "bytes": 150484,
+      "sha256": "1fae9e1bb609848a1667d32eed8d6083ae443538a306843056a2a660f1b2926a"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/left_shoulder_pitch_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/left_shoulder_pitch_link.STL",
+      "bytes": 176784,
+      "sha256": "f0d1cfd02fcf0d42f95e678eeca33da3afbcc366ffba5c052847773ec4f31d52"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/left_shoulder_roll_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/left_shoulder_roll_link.STL",
+      "bytes": 400284,
+      "sha256": "fb9df21687773522598dc384f1a2945c7519f11cbc8bd372a49170316d6eee88"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/left_shoulder_yaw_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/left_shoulder_yaw_link.STL",
+      "bytes": 249184,
+      "sha256": "1aa97e9748e924336567992181f78c7cd0652fd52a4afcca3df6b2ef6f9e712e"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/left_elbow_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/left_elbow_link.STL",
+      "bytes": 88784,
+      "sha256": "fa752198accd104d5c4c3a01382e45165b944fbbc5acce085059223324e5bed3"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/left_wrist_roll_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/left_wrist_roll_link.STL",
+      "bytes": 356184,
+      "sha256": "edc387c9a0ba8c2237e9b296d32531426fabeb6f53e58df45c76106bca74148c"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/left_wrist_pitch_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/left_wrist_pitch_link.STL",
+      "bytes": 85984,
+      "sha256": "b251d8e05047f695d0f536cd78c11973cfa4e78d08cfe82759336cc3471de3a9"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/left_wrist_yaw_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/left_wrist_yaw_link.STL",
+      "bytes": 318684,
+      "sha256": "83f8fb3a726bf9613d65dd14f0f447cb918c3c95b3938042a0c9c09749267d3b"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/left_hand_palm_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/left_hand_palm_link.STL",
+      "bytes": 2140184,
+      "sha256": "23a486b75bd78a9bf03cec25d84d87f97f3dae038cf21a743b6d469b337e4004"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/left_hand_thumb_0_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/left_hand_thumb_0_link.STL",
+      "bytes": 8884,
+      "sha256": "a90c721661c0622685488a3c74d1e122c7da89242d3a1daef75edb83422d05e0"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/left_hand_thumb_1_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/left_hand_thumb_1_link.STL",
+      "bytes": 475984,
+      "sha256": "445c54a45bc13ce36001556f66bc0f49c83cb40321205ae4d676bb2874325684"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/left_hand_thumb_2_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/left_hand_thumb_2_link.STL",
+      "bytes": 1521784,
+      "sha256": "3d8dbe5085acfc213d21aa8b0782e89cd79084e9678f3a85fc7b04a86b029db5"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/left_hand_middle_0_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/left_hand_middle_0_link.STL",
+      "bytes": 475984,
+      "sha256": "6b35f2f77211d5a366f0b9a4e47c4ee35e536731266f1a34e9efa12db579b892"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/left_hand_middle_1_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/left_hand_middle_1_link.STL",
+      "bytes": 1521784,
+      "sha256": "9e315ebc8a7a0cb98e033985b586b20d81cf8aa761181ae61ce56fcb14077a06"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/left_hand_index_0_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/left_hand_index_0_link.STL",
+      "bytes": 475984,
+      "sha256": "6b35f2f77211d5a366f0b9a4e47c4ee35e536731266f1a34e9efa12db579b892"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/left_hand_index_1_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/left_hand_index_1_link.STL",
+      "bytes": 1521784,
+      "sha256": "9e315ebc8a7a0cb98e033985b586b20d81cf8aa761181ae61ce56fcb14077a06"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/right_shoulder_pitch_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/right_shoulder_pitch_link.STL",
+      "bytes": 176784,
+      "sha256": "24cdb387e0128dfe602770a81c56cdce3a0181d34d039a11d1aaf8819b7b8c02"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/right_shoulder_roll_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/right_shoulder_roll_link.STL",
+      "bytes": 401884,
+      "sha256": "962b97c48f9ce9e8399f45dd9522e0865d19aa9fd299406b2d475a8fc4a53e81"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/right_shoulder_yaw_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/right_shoulder_yaw_link.STL",
+      "bytes": 249984,
+      "sha256": "a0b76489271da0c72461a344c9ffb0f0c6e64f019ea5014c1624886c442a2fe5"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/right_elbow_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/right_elbow_link.STL",
+      "bytes": 88784,
+      "sha256": "1be925d7aa268bb8fddf5362b9173066890c7d32092c05638608126e59d1e2ab"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/right_wrist_roll_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/right_wrist_roll_link.STL",
+      "bytes": 356084,
+      "sha256": "a7ee9212ff5b94d6cb7f52bb1bbf3f352194d5b598acff74f4c77d340c5b344f"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/right_wrist_pitch_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/right_wrist_pitch_link.STL",
+      "bytes": 79584,
+      "sha256": "d22f8f3b3127f15a63e5be1ee273cd5075786c3142f1c3d9f76cbf43d2a26477"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/right_wrist_yaw_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/right_wrist_yaw_link.STL",
+      "bytes": 341484,
+      "sha256": "bc9dece2d12509707e0057ba2e48df8f3d56db0c79410212963a25e8a50f61a6"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/right_hand_palm_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/right_hand_palm_link.STL",
+      "bytes": 2140184,
+      "sha256": "86c0b231cc44477d64a6493e5a427ba16617a00738112dd187c652675b086fb9"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/right_hand_thumb_0_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/right_hand_thumb_0_link.STL",
+      "bytes": 8884,
+      "sha256": "544298d0ea1088f5b276a10cc6a6a9e533efdd91594955fdc956c46211d07f83"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/right_hand_thumb_1_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/right_hand_thumb_1_link.STL",
+      "bytes": 475984,
+      "sha256": "0a9a820da8dd10f298778b714f1364216e8a5976f4fd3a05689ea26327d44bf6"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/right_hand_thumb_2_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/right_hand_thumb_2_link.STL",
+      "bytes": 1521784,
+      "sha256": "3f1bfb37668e8f61801c8d25f171fa1949e08666be86c67acad7e0079937cc45"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/right_hand_middle_0_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/right_hand_middle_0_link.STL",
+      "bytes": 475984,
+      "sha256": "12ab4300c95e437e834f9aef772b3b431c671bf34338930b52ad11aef73bbd0d"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/right_hand_middle_1_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/right_hand_middle_1_link.STL",
+      "bytes": 1521784,
+      "sha256": "c9c34efce4563cacdcfd29fc838a982976d40f5442c71219811dcbbf3923a33d"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/right_hand_index_0_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/right_hand_index_0_link.STL",
+      "bytes": 475984,
+      "sha256": "12ab4300c95e437e834f9aef772b3b431c671bf34338930b52ad11aef73bbd0d"
+    },
+    {
+      "path": "mujoco/model/g1/meshes/right_hand_index_1_link.STL",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/g1/meshes/right_hand_index_1_link.STL",
+      "bytes": 1521784,
+      "sha256": "c9c34efce4563cacdcfd29fc838a982976d40f5442c71219811dcbbf3923a33d"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/g1_29dof_with_hand.xml",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/g1_29dof_with_hand.xml",
+      "bytes": 55895,
+      "sha256": "8d120ef823a27c96eae88aec07796e224615afe0f289a5a3ab4eaf6c3cf72c91"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/pelvis.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/pelvis.STL",
+      "bytes": 1060884,
+      "sha256": "5ba6bbc888e630550140d3c26763f10206da8c8bd30ed886b8ede41c61f57a31"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/pelvis_contour_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/pelvis_contour_link.STL",
+      "bytes": 1805184,
+      "sha256": "5cc5c2c7a312329e3feeb2b03d3fc09fc29705bd01864f6767e51be959662420"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/left_hip_pitch_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/left_hip_pitch_link.STL",
+      "bytes": 181684,
+      "sha256": "4725168105ee768ee31638ef22b53f6be2d7641bfd7cfefe803488d884776fa4"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/left_hip_roll_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/left_hip_roll_link.STL",
+      "bytes": 192184,
+      "sha256": "91f25922ee8a7c3152790051bebad17b4d9cd243569c38fe340285ff93a97acf"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/left_hip_yaw_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/left_hip_yaw_link.STL",
+      "bytes": 296284,
+      "sha256": "a16d88aa6ddac8083aa7ad55ed317bea44b1fa003d314fba88965b7ed0f3b55b"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/left_knee_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/left_knee_link.STL",
+      "bytes": 854884,
+      "sha256": "8d92b9e3d3a636761150bb8025e32514c4602b91c7028d523ee42b3e632de477"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/left_ankle_pitch_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/left_ankle_pitch_link.STL",
+      "bytes": 71184,
+      "sha256": "d49e3abc6f5b12e532062cd575b87b5ef40cd2a3fc18f54a1ca5bba4f773d51d"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/left_ankle_roll_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/left_ankle_roll_link.STL",
+      "bytes": 653384,
+      "sha256": "c4092af943141d4d9f74232f3cfa345afc6565f46a077793b8ae0e68b39dc33f"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/right_hip_pitch_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/right_hip_pitch_link.STL",
+      "bytes": 181284,
+      "sha256": "e4f3c99d7f4a7d34eadbef9461fc66e3486cb5442db1ec50c86317d459f1a9c6"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/right_hip_roll_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/right_hip_roll_link.STL",
+      "bytes": 192684,
+      "sha256": "4c254ef66a356f492947f360dd931965477b631e3fcc841f91ccc46d945d54f6"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/right_hip_yaw_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/right_hip_yaw_link.STL",
+      "bytes": 296284,
+      "sha256": "e479c2936ca2057e9eb2f7dff6c189b7419d7b8484dea0b298cbb36a2a6aa668"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/right_knee_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/right_knee_link.STL",
+      "bytes": 852284,
+      "sha256": "63c4008449c9bbe701a6e2b557b7a252e90cf3a5abcf54cee46862b9a69f8ec8"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/right_ankle_pitch_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/right_ankle_pitch_link.STL",
+      "bytes": 71184,
+      "sha256": "15be426539ec1be70246d4d82a168806db64a41301af8b35c197a33348c787a9"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/right_ankle_roll_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/right_ankle_roll_link.STL",
+      "bytes": 653784,
+      "sha256": "4b66222ea56653e627711b56d0a8949b4920da5df091da0ceb343f54e884e3a5"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/waist_yaw_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/waist_yaw_link.STL",
+      "bytes": 336284,
+      "sha256": "2883f20e03f09b669b5b4ce10677ee6b5191c0934b584d7cbaef2d0662856ffb"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/waist_roll_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/waist_roll_link.STL",
+      "bytes": 24184,
+      "sha256": "34f0aa73f41131230be4d25876c944fdf6c24d62553f199ff8b980c15e8913df"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/torso_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/torso_link.STL",
+      "bytes": 2232984,
+      "sha256": "e96d023f0368a4e3450b86ca5d4f10227d8141156a373e7da8cb3c93266523e0"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/logo_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/logo_link.STL",
+      "bytes": 243384,
+      "sha256": "8571a0a19bc4916fa55f91449f51d5fdefd751000054865a842449429d5f155b"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/head_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/head_link.STL",
+      "bytes": 932784,
+      "sha256": "005fb67fbd3eff94aa8bf4a6e83238174e9f91b6721f7111594322f223724411"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/waist_support_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/waist_support_link.STL",
+      "bytes": 150484,
+      "sha256": "1fae9e1bb609848a1667d32eed8d6083ae443538a306843056a2a660f1b2926a"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/left_shoulder_pitch_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/left_shoulder_pitch_link.STL",
+      "bytes": 176784,
+      "sha256": "f0d1cfd02fcf0d42f95e678eeca33da3afbcc366ffba5c052847773ec4f31d52"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/left_shoulder_roll_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/left_shoulder_roll_link.STL",
+      "bytes": 400284,
+      "sha256": "fb9df21687773522598dc384f1a2945c7519f11cbc8bd372a49170316d6eee88"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/left_shoulder_yaw_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/left_shoulder_yaw_link.STL",
+      "bytes": 249184,
+      "sha256": "1aa97e9748e924336567992181f78c7cd0652fd52a4afcca3df6b2ef6f9e712e"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/left_elbow_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/left_elbow_link.STL",
+      "bytes": 88784,
+      "sha256": "fa752198accd104d5c4c3a01382e45165b944fbbc5acce085059223324e5bed3"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/left_wrist_roll_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/left_wrist_roll_link.STL",
+      "bytes": 356184,
+      "sha256": "edc387c9a0ba8c2237e9b296d32531426fabeb6f53e58df45c76106bca74148c"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/left_wrist_pitch_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/left_wrist_pitch_link.STL",
+      "bytes": 85984,
+      "sha256": "b251d8e05047f695d0f536cd78c11973cfa4e78d08cfe82759336cc3471de3a9"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/left_wrist_yaw_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/left_wrist_yaw_link.STL",
+      "bytes": 318684,
+      "sha256": "83f8fb3a726bf9613d65dd14f0f447cb918c3c95b3938042a0c9c09749267d3b"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/left_hand_palm_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/left_hand_palm_link.STL",
+      "bytes": 2140184,
+      "sha256": "23a486b75bd78a9bf03cec25d84d87f97f3dae038cf21a743b6d469b337e4004"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/left_hand_thumb_0_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/left_hand_thumb_0_link.STL",
+      "bytes": 8884,
+      "sha256": "a90c721661c0622685488a3c74d1e122c7da89242d3a1daef75edb83422d05e0"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/left_hand_thumb_1_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/left_hand_thumb_1_link.STL",
+      "bytes": 475984,
+      "sha256": "445c54a45bc13ce36001556f66bc0f49c83cb40321205ae4d676bb2874325684"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/left_hand_thumb_2_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/left_hand_thumb_2_link.STL",
+      "bytes": 1521784,
+      "sha256": "3d8dbe5085acfc213d21aa8b0782e89cd79084e9678f3a85fc7b04a86b029db5"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/left_hand_middle_0_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/left_hand_middle_0_link.STL",
+      "bytes": 475984,
+      "sha256": "6b35f2f77211d5a366f0b9a4e47c4ee35e536731266f1a34e9efa12db579b892"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/left_hand_middle_1_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/left_hand_middle_1_link.STL",
+      "bytes": 1521784,
+      "sha256": "9e315ebc8a7a0cb98e033985b586b20d81cf8aa761181ae61ce56fcb14077a06"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/left_hand_index_0_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/left_hand_index_0_link.STL",
+      "bytes": 475984,
+      "sha256": "6b35f2f77211d5a366f0b9a4e47c4ee35e536731266f1a34e9efa12db579b892"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/left_hand_index_1_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/left_hand_index_1_link.STL",
+      "bytes": 1521784,
+      "sha256": "9e315ebc8a7a0cb98e033985b586b20d81cf8aa761181ae61ce56fcb14077a06"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/right_shoulder_pitch_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/right_shoulder_pitch_link.STL",
+      "bytes": 176784,
+      "sha256": "24cdb387e0128dfe602770a81c56cdce3a0181d34d039a11d1aaf8819b7b8c02"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/right_shoulder_roll_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/right_shoulder_roll_link.STL",
+      "bytes": 401884,
+      "sha256": "962b97c48f9ce9e8399f45dd9522e0865d19aa9fd299406b2d475a8fc4a53e81"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/right_shoulder_yaw_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/right_shoulder_yaw_link.STL",
+      "bytes": 249984,
+      "sha256": "a0b76489271da0c72461a344c9ffb0f0c6e64f019ea5014c1624886c442a2fe5"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/right_elbow_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/right_elbow_link.STL",
+      "bytes": 88784,
+      "sha256": "1be925d7aa268bb8fddf5362b9173066890c7d32092c05638608126e59d1e2ab"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/right_wrist_roll_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/right_wrist_roll_link.STL",
+      "bytes": 356084,
+      "sha256": "a7ee9212ff5b94d6cb7f52bb1bbf3f352194d5b598acff74f4c77d340c5b344f"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/right_wrist_pitch_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/right_wrist_pitch_link.STL",
+      "bytes": 79584,
+      "sha256": "d22f8f3b3127f15a63e5be1ee273cd5075786c3142f1c3d9f76cbf43d2a26477"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/right_wrist_yaw_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/right_wrist_yaw_link.STL",
+      "bytes": 341484,
+      "sha256": "bc9dece2d12509707e0057ba2e48df8f3d56db0c79410212963a25e8a50f61a6"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/right_hand_palm_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/right_hand_palm_link.STL",
+      "bytes": 2140184,
+      "sha256": "86c0b231cc44477d64a6493e5a427ba16617a00738112dd187c652675b086fb9"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/right_hand_thumb_0_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/right_hand_thumb_0_link.STL",
+      "bytes": 8884,
+      "sha256": "544298d0ea1088f5b276a10cc6a6a9e533efdd91594955fdc956c46211d07f83"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/right_hand_thumb_1_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/right_hand_thumb_1_link.STL",
+      "bytes": 475984,
+      "sha256": "0a9a820da8dd10f298778b714f1364216e8a5976f4fd3a05689ea26327d44bf6"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/right_hand_thumb_2_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/right_hand_thumb_2_link.STL",
+      "bytes": 1521784,
+      "sha256": "3f1bfb37668e8f61801c8d25f171fa1949e08666be86c67acad7e0079937cc45"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/right_hand_middle_0_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/right_hand_middle_0_link.STL",
+      "bytes": 475984,
+      "sha256": "12ab4300c95e437e834f9aef772b3b431c671bf34338930b52ad11aef73bbd0d"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/right_hand_middle_1_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/right_hand_middle_1_link.STL",
+      "bytes": 1521784,
+      "sha256": "c9c34efce4563cacdcfd29fc838a982976d40f5442c71219811dcbbf3923a33d"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/right_hand_index_0_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/right_hand_index_0_link.STL",
+      "bytes": 475984,
+      "sha256": "12ab4300c95e437e834f9aef772b3b431c671bf34338930b52ad11aef73bbd0d"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/meshes/right_hand_index_1_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/meshes/right_hand_index_1_link.STL",
+      "bytes": 1521784,
+      "sha256": "c9c34efce4563cacdcfd29fc838a982976d40f5442c71219811dcbbf3923a33d"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/g1_29dof_with_hand.urdf",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/g1_29dof_with_hand.urdf",
+      "bytes": 51012,
+      "sha256": "3dcb9c361753f464fa1f0238cdf800af842909628fd153733075607881c12d62"
+    },
+    {
+      "path": "mujoco/model/simple_g1_sonic/scene_43dof.xml",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1_sonic/scene_43dof.xml",
+      "bytes": 1130,
+      "sha256": "274e7b3755dc1eedcf210af54d1c97749f31457d77ae2c499ec234e804065b21"
+    },
+    {
+      "path": "mujoco/model/task_assets/2real_asset/green_box/base_visual_05pct.obj",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/2real_asset/green_box/base_visual_05pct.obj",
+      "bytes": 2769583,
+      "sha256": "b4e7fde2163dcaf14a7334fa9b0764657507f67eb0918f4664d0b5f2caab8239"
+    },
+    {
+      "path": "mujoco/model/task_assets/2real_asset/green_box/collision_coacd/green_box_coacd_00.obj",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/2real_asset/green_box/collision_coacd/green_box_coacd_00.obj",
+      "bytes": 421,
+      "sha256": "f3ae2a90bc1299a25d644b338b3c8d052855306551cc0a005e8837271fc3a42f"
+    },
+    {
+      "path": "mujoco/model/task_assets/2real_asset/green_box/collision_coacd/green_box_coacd_01.obj",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/2real_asset/green_box/collision_coacd/green_box_coacd_01.obj",
+      "bytes": 425,
+      "sha256": "8cc2ee28b2482568aa43ac1896b3922286d0d63beebf24106bee3d6d09cfa9d3"
+    },
+    {
+      "path": "mujoco/model/task_assets/2real_asset/green_box/collision_coacd/green_box_coacd_02.obj",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/2real_asset/green_box/collision_coacd/green_box_coacd_02.obj",
+      "bytes": 417,
+      "sha256": "0844c61388f5c3433377e33a708b2967c2e904556b2b0333ddcd2e3c7a96cd59"
+    },
+    {
+      "path": "mujoco/model/task_assets/2real_asset/green_box/collision_coacd/green_box_coacd_03.obj",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/2real_asset/green_box/collision_coacd/green_box_coacd_03.obj",
+      "bytes": 425,
+      "sha256": "6f43a81118251298a4606e23db95272d5697d20598e13517ddf75de2ee8bb2e8"
+    },
+    {
+      "path": "mujoco/model/task_assets/2real_asset/green_box/collision_coacd/green_box_coacd_04.obj",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/2real_asset/green_box/collision_coacd/green_box_coacd_04.obj",
+      "bytes": 417,
+      "sha256": "8ca3d3eee1f15de1c03102cd1dc48b9b9a6f0a559708f18dc0cc90e4c04b7a96"
+    },
+    {
+      "path": "mujoco/model/task_assets/2real_asset/green_box/texture_diffuse.png",
+      "source": "/home/ubuntu/yzh/HumanoidVLA_MJ_backup/HumanoidVLA_MJ/mujoco/model/task_assets/2real_asset/green_box/texture_diffuse.png",
+      "bytes": 3089015,
+      "sha256": "45b32c48ef264bd8c7bb5a55b44e4f8253815f043e97f40cf876c3ddd0daae2c"
+    },
+    {
+      "path": "mujoco/model/simple_g1/curobo/dex3_left.yml",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/curobo/dex3_left.yml",
+      "bytes": 4164,
+      "sha256": "2886d2654b915e0c9c023f0fa74789239ab970c7738c926d4ad3d4e6ab79ed72"
+    },
+    {
+      "path": "mujoco/model/simple_g1/curobo/dex3_right.yml",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/curobo/dex3_right.yml",
+      "bytes": 4213,
+      "sha256": "3cad6e188d97f5ea1794f37d5518734e9b5dede29429b2e3f6083b167c1172fd"
+    },
+    {
+      "path": "mujoco/model/simple_g1/curobo/g1_29dof_with_dex3.yml",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/curobo/g1_29dof_with_dex3.yml",
+      "bytes": 13737,
+      "sha256": "e0024192398517f6f2b84f6602ff194ec6f0422d319d7a5156097c86bb24e25a"
+    },
+    {
+      "path": "mujoco/model/simple_g1/curobo/g1_29dof_with_inspire_hand.yml",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/curobo/g1_29dof_with_inspire_hand.yml",
+      "bytes": 19671,
+      "sha256": "82e351ad495b62ad25c5c83922caf9814606b5c8cbe7e1ee54c97bd2f5f65be0"
+    },
+    {
+      "path": "mujoco/model/simple_g1/curobo/inspire_left.yml",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/curobo/inspire_left.yml",
+      "bytes": 4021,
+      "sha256": "df096c3eb8f34409b397c14c8b68696be83d94188e9e3243ffc0b0c641dba590"
+    },
+    {
+      "path": "mujoco/model/simple_g1/curobo/inspire_right.yml",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/curobo/inspire_right.yml",
+      "bytes": 4083,
+      "sha256": "e198632a857cca85d19a651e79c9e04b09b4ab2ac3292858955180bd99a167dd"
+    },
+    {
+      "path": "mujoco/model/simple_g1/curobo/spheres/dex3_left.yml",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/curobo/spheres/dex3_left.yml",
+      "bytes": 1402,
+      "sha256": "a03cc16c9fc758c7bb355afef0d225c04a592aec4c2706c7efbe994cb1b29356"
+    },
+    {
+      "path": "mujoco/model/simple_g1/curobo/spheres/dex3_right.yml",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/curobo/spheres/dex3_right.yml",
+      "bytes": 1405,
+      "sha256": "78c29fe61e33d3947236a7f20081c4a564e6aef90f049a1f88ff4103e3244594"
+    },
+    {
+      "path": "mujoco/model/simple_g1/curobo/spheres/g1_29dof.yml",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/curobo/spheres/g1_29dof.yml",
+      "bytes": 4404,
+      "sha256": "61dd2ee55fb732b3cfd3573c925fa6afd4aec8382a09ea22fabf78ba06a0b5de"
+    },
+    {
+      "path": "mujoco/model/simple_g1/curobo/spheres/g1_29dof_inspire.yml",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/curobo/spheres/g1_29dof_inspire.yml",
+      "bytes": 4932,
+      "sha256": "3bc384f9f9629cf668c17092c5cebe9c6d0c0e361b18bbd0ef08cb6dc9631fa2"
+    },
+    {
+      "path": "mujoco/model/simple_g1/curobo/spheres/inspire_left.yml",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/curobo/spheres/inspire_left.yml",
+      "bytes": 2649,
+      "sha256": "953ba915bf3e3c77d6bf2d2c974ce51e73569fd8b4ba13aa369db0396dbb3cc4"
+    },
+    {
+      "path": "mujoco/model/simple_g1/curobo/spheres/inspire_right.yml",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/curobo/spheres/inspire_right.yml",
+      "bytes": 2631,
+      "sha256": "994b5981643217d7d2cc991051359d8b090eb2de166aece302148aa290ab21a2"
+    },
+    {
+      "path": "mujoco/model/simple_g1/g1_29dof.urdf",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/g1_29dof.urdf",
+      "bytes": 35180,
+      "sha256": "e1dc89366bf96aa33ba4ef211884f6d81320ddd2ac6f8b1ad82986e64008be31"
+    },
+    {
+      "path": "mujoco/model/simple_g1/g1_29dof_wholebody_dex3.urdf",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/g1_29dof_wholebody_dex3.urdf",
+      "bytes": 48653,
+      "sha256": "19f8054183088bfd95a754322e5adf72fa400a16ea38b5c121a9ab596453f54a"
+    },
+    {
+      "path": "mujoco/model/simple_g1/g1_29dof_with_dex3.urdf",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/g1_29dof_with_dex3.urdf",
+      "bytes": 50072,
+      "sha256": "813b5d884ae43e17c2fdddcd3f3e35fe1a9372df98a7538164a38bd765d26967"
+    },
+    {
+      "path": "mujoco/model/simple_g1/g1_29dof_with_inspire_hand.urdf",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/g1_29dof_with_inspire_hand.urdf",
+      "bytes": 58513,
+      "sha256": "fc0a7afaa31b94380edc66f93b54c24bb6b664155c1da66e3c8245e2df54f3a6"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/L_hand_base_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/L_hand_base_link.STL",
+      "bytes": 1448084,
+      "sha256": "33ab4e97801bd5421903a78f5977a44e477ae8653eaf32358d35633e465411e0"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/Link11_L.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/Link11_L.STL",
+      "bytes": 46584,
+      "sha256": "d87cb704d80de840555d0a393117d32f9bd5e91425e0458363e0a799aa4e5339"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/Link11_R.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/Link11_R.STL",
+      "bytes": 46884,
+      "sha256": "b49b6463f801f0402bac9c65bb989c4097f6d2c1fa1597ba560aedd640561778"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/Link12_L.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/Link12_L.STL",
+      "bytes": 917284,
+      "sha256": "9f35b78a9cab1007ac8b73023a5862ed055d33951b5742f9a783997d38e99551"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/Link12_R.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/Link12_R.STL",
+      "bytes": 921984,
+      "sha256": "347212bdb22d80fb364dd889de934d6fbb935e38d1f24c682caed84f7b6ea8cb"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/Link13_L.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/Link13_L.STL",
+      "bytes": 488584,
+      "sha256": "7e93b55f2ae73fe0f62cd27e81d8a4620211068cb1c9b25e6414e802a37541ee"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/Link13_R.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/Link13_R.STL",
+      "bytes": 483284,
+      "sha256": "c157dfe5b666efb1c3d51342e56f5caad2fc350930ac21ee1e02d956c1034ca3"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/Link14_L.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/Link14_L.STL",
+      "bytes": 155184,
+      "sha256": "b677bcdcddcd90ff4b005f83daa9e50eb4003d5e67ea4eeefbf857718716c164"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/Link14_R.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/Link14_R.STL",
+      "bytes": 155584,
+      "sha256": "564aa8c3d2ff0e51b75736a8b01b4c309c7098582a424ea1391ccb75125519d8"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/Link15_L.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/Link15_L.STL",
+      "bytes": 407184,
+      "sha256": "8c601e7aa8e1c91310a75190dfb6b95a8dc981b707e5f104f9ca9ecbea118b34"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/Link15_R.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/Link15_R.STL",
+      "bytes": 411884,
+      "sha256": "09c120f7fb7761aa97d89240cd8cb8e30c40ee60093cbb8b1c2e13a68a8e3845"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/Link16_L.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/Link16_L.STL",
+      "bytes": 329384,
+      "sha256": "7d8508c65db44e2349f37e8ab4c057d204a40093d4733897ae5b51075b00f5e9"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/Link16_R.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/Link16_R.STL",
+      "bytes": 335484,
+      "sha256": "6942ada1189cdf442124c6b8935f3e3a3ae310092a3a1414fdeb0bd6d23578bb"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/Link17_L.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/Link17_L.STL",
+      "bytes": 407184,
+      "sha256": "ca2a68fed635eca290b234fbdc649779036ba5bac753addcb7ce6a086ad95949"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/Link17_R.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/Link17_R.STL",
+      "bytes": 411884,
+      "sha256": "36fc62c609800ce6d4521ae6f3c4c9b8a732be28654f32f04893696c17e6930c"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/Link18_L.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/Link18_L.STL",
+      "bytes": 182684,
+      "sha256": "9425aea7ebbf6d1dfb2eb0714fb44dfaea6b6a81c71d6e96c8d3950f636dfa62"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/Link18_R.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/Link18_R.STL",
+      "bytes": 182984,
+      "sha256": "9711fac7df0c09a372e1529f74b9d506d37abf3ebc3241d976ad45e5ee7e2d69"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/Link19_L.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/Link19_L.STL",
+      "bytes": 407184,
+      "sha256": "cbb256a70c17e21c995df66807f0755dc136d0312df245112d6d4bfcd29c43a4"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/Link19_R.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/Link19_R.STL",
+      "bytes": 411884,
+      "sha256": "46619bd6a887615d7dfe850d39a6f5d8f8c5ecfa9429c567338f3a659a5d4d75"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/Link20_L.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/Link20_L.STL",
+      "bytes": 329484,
+      "sha256": "e9145af7a515bce4c1c06d16b5be8900ec3f8375fc8e34d371315ce76f600877"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/Link20_R.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/Link20_R.STL",
+      "bytes": 334784,
+      "sha256": "a517debff6b924c22ae0f87dbb6aac199a1f130c7fef353a7d659e365f30b1f4"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/Link21_L.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/Link21_L.STL",
+      "bytes": 407184,
+      "sha256": "180ab4ac01dab60407d0b33819883eb0ec869e4d4f349f786972135c7114fc0d"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/Link21_R.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/Link21_R.STL",
+      "bytes": 411884,
+      "sha256": "ed0a29d2376e8874f724bc2c20384eeec93d8268e59bb8c45628335f7ab6742e"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/Link22_L.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/Link22_L.STL",
+      "bytes": 413384,
+      "sha256": "5e64ea976ecf08c46e8cb80a5dd56ee3e8c5f36a0573ab3c69160d9337f941e1"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/Link22_R.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/Link22_R.STL",
+      "bytes": 416484,
+      "sha256": "1aa3fb46f689251ee38f5262b71364c680f70d1ad1dd9c6f1cae8c098b0e8422"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/R_hand_base_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/R_hand_base_link.STL",
+      "bytes": 1472384,
+      "sha256": "b4d84504242a99fa915c4ed5195ce4724c67cb94d9217cd4c254cfb5937ecf5c"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/head_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/head_link.STL",
+      "bytes": 932784,
+      "sha256": "005fb67fbd3eff94aa8bf4a6e83238174e9f91b6721f7111594322f223724411"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/left_ankle_pitch_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/left_ankle_pitch_link.STL",
+      "bytes": 71184,
+      "sha256": "d49e3abc6f5b12e532062cd575b87b5ef40cd2a3fc18f54a1ca5bba4f773d51d"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/left_ankle_roll_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/left_ankle_roll_link.STL",
+      "bytes": 653384,
+      "sha256": "c4092af943141d4d9f74232f3cfa345afc6565f46a077793b8ae0e68b39dc33f"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/left_elbow_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/left_elbow_link.STL",
+      "bytes": 88784,
+      "sha256": "fa752198accd104d5c4c3a01382e45165b944fbbc5acce085059223324e5bed3"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/left_hand_index_0_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/left_hand_index_0_link.STL",
+      "bytes": 475984,
+      "sha256": "6b35f2f77211d5a366f0b9a4e47c4ee35e536731266f1a34e9efa12db579b892"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/left_hand_index_1_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/left_hand_index_1_link.STL",
+      "bytes": 1521784,
+      "sha256": "9e315ebc8a7a0cb98e033985b586b20d81cf8aa761181ae61ce56fcb14077a06"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/left_hand_middle_0_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/left_hand_middle_0_link.STL",
+      "bytes": 475984,
+      "sha256": "6b35f2f77211d5a366f0b9a4e47c4ee35e536731266f1a34e9efa12db579b892"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/left_hand_middle_1_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/left_hand_middle_1_link.STL",
+      "bytes": 1521784,
+      "sha256": "9e315ebc8a7a0cb98e033985b586b20d81cf8aa761181ae61ce56fcb14077a06"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/left_hand_palm_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/left_hand_palm_link.STL",
+      "bytes": 2140184,
+      "sha256": "23a486b75bd78a9bf03cec25d84d87f97f3dae038cf21a743b6d469b337e4004"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/left_hand_thumb_0_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/left_hand_thumb_0_link.STL",
+      "bytes": 8884,
+      "sha256": "a90c721661c0622685488a3c74d1e122c7da89242d3a1daef75edb83422d05e0"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/left_hand_thumb_1_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/left_hand_thumb_1_link.STL",
+      "bytes": 475984,
+      "sha256": "445c54a45bc13ce36001556f66bc0f49c83cb40321205ae4d676bb2874325684"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/left_hand_thumb_2_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/left_hand_thumb_2_link.STL",
+      "bytes": 1521784,
+      "sha256": "3d8dbe5085acfc213d21aa8b0782e89cd79084e9678f3a85fc7b04a86b029db5"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/left_hip_pitch_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/left_hip_pitch_link.STL",
+      "bytes": 181684,
+      "sha256": "4725168105ee768ee31638ef22b53f6be2d7641bfd7cfefe803488d884776fa4"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/left_hip_roll_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/left_hip_roll_link.STL",
+      "bytes": 192184,
+      "sha256": "91f25922ee8a7c3152790051bebad17b4d9cd243569c38fe340285ff93a97acf"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/left_hip_yaw_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/left_hip_yaw_link.STL",
+      "bytes": 296284,
+      "sha256": "a16d88aa6ddac8083aa7ad55ed317bea44b1fa003d314fba88965b7ed0f3b55b"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/left_knee_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/left_knee_link.STL",
+      "bytes": 854884,
+      "sha256": "8d92b9e3d3a636761150bb8025e32514c4602b91c7028d523ee42b3e632de477"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/left_rubber_hand.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/left_rubber_hand.STL",
+      "bytes": 2287484,
+      "sha256": "cff2221a690fa69303f61fce68f2d155c1517b52efb6ca9262dd56e0bc6e70fe"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/left_shoulder_pitch_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/left_shoulder_pitch_link.STL",
+      "bytes": 176784,
+      "sha256": "f0d1cfd02fcf0d42f95e678eeca33da3afbcc366ffba5c052847773ec4f31d52"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/left_shoulder_roll_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/left_shoulder_roll_link.STL",
+      "bytes": 400284,
+      "sha256": "fb9df21687773522598dc384f1a2945c7519f11cbc8bd372a49170316d6eee88"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/left_shoulder_yaw_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/left_shoulder_yaw_link.STL",
+      "bytes": 249184,
+      "sha256": "1aa97e9748e924336567992181f78c7cd0652fd52a4afcca3df6b2ef6f9e712e"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/left_wrist_pitch_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/left_wrist_pitch_link.STL",
+      "bytes": 85984,
+      "sha256": "b251d8e05047f695d0f536cd78c11973cfa4e78d08cfe82759336cc3471de3a9"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/left_wrist_roll_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/left_wrist_roll_link.STL",
+      "bytes": 356184,
+      "sha256": "edc387c9a0ba8c2237e9b296d32531426fabeb6f53e58df45c76106bca74148c"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/left_wrist_yaw_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/left_wrist_yaw_link.STL",
+      "bytes": 318684,
+      "sha256": "83f8fb3a726bf9613d65dd14f0f447cb918c3c95b3938042a0c9c09749267d3b"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/logo_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/logo_link.STL",
+      "bytes": 243384,
+      "sha256": "8571a0a19bc4916fa55f91449f51d5fdefd751000054865a842449429d5f155b"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/pelvis.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/pelvis.STL",
+      "bytes": 1060884,
+      "sha256": "5ba6bbc888e630550140d3c26763f10206da8c8bd30ed886b8ede41c61f57a31"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/pelvis_contour_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/pelvis_contour_link.STL",
+      "bytes": 1805184,
+      "sha256": "5cc5c2c7a312329e3feeb2b03d3fc09fc29705bd01864f6767e51be959662420"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/right_ankle_pitch_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/right_ankle_pitch_link.STL",
+      "bytes": 71184,
+      "sha256": "15be426539ec1be70246d4d82a168806db64a41301af8b35c197a33348c787a9"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/right_ankle_roll_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/right_ankle_roll_link.STL",
+      "bytes": 653784,
+      "sha256": "4b66222ea56653e627711b56d0a8949b4920da5df091da0ceb343f54e884e3a5"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/right_elbow_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/right_elbow_link.STL",
+      "bytes": 88784,
+      "sha256": "1be925d7aa268bb8fddf5362b9173066890c7d32092c05638608126e59d1e2ab"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/right_hand_index_0_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/right_hand_index_0_link.STL",
+      "bytes": 475984,
+      "sha256": "12ab4300c95e437e834f9aef772b3b431c671bf34338930b52ad11aef73bbd0d"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/right_hand_index_1_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/right_hand_index_1_link.STL",
+      "bytes": 1521784,
+      "sha256": "c9c34efce4563cacdcfd29fc838a982976d40f5442c71219811dcbbf3923a33d"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/right_hand_middle_0_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/right_hand_middle_0_link.STL",
+      "bytes": 475984,
+      "sha256": "12ab4300c95e437e834f9aef772b3b431c671bf34338930b52ad11aef73bbd0d"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/right_hand_middle_1_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/right_hand_middle_1_link.STL",
+      "bytes": 1521784,
+      "sha256": "c9c34efce4563cacdcfd29fc838a982976d40f5442c71219811dcbbf3923a33d"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/right_hand_palm_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/right_hand_palm_link.STL",
+      "bytes": 2140184,
+      "sha256": "86c0b231cc44477d64a6493e5a427ba16617a00738112dd187c652675b086fb9"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/right_hand_thumb_0_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/right_hand_thumb_0_link.STL",
+      "bytes": 8884,
+      "sha256": "544298d0ea1088f5b276a10cc6a6a9e533efdd91594955fdc956c46211d07f83"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/right_hand_thumb_1_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/right_hand_thumb_1_link.STL",
+      "bytes": 475984,
+      "sha256": "0a9a820da8dd10f298778b714f1364216e8a5976f4fd3a05689ea26327d44bf6"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/right_hand_thumb_2_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/right_hand_thumb_2_link.STL",
+      "bytes": 1521784,
+      "sha256": "3f1bfb37668e8f61801c8d25f171fa1949e08666be86c67acad7e0079937cc45"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/right_hip_pitch_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/right_hip_pitch_link.STL",
+      "bytes": 181284,
+      "sha256": "e4f3c99d7f4a7d34eadbef9461fc66e3486cb5442db1ec50c86317d459f1a9c6"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/right_hip_roll_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/right_hip_roll_link.STL",
+      "bytes": 192684,
+      "sha256": "4c254ef66a356f492947f360dd931965477b631e3fcc841f91ccc46d945d54f6"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/right_hip_yaw_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/right_hip_yaw_link.STL",
+      "bytes": 296284,
+      "sha256": "e479c2936ca2057e9eb2f7dff6c189b7419d7b8484dea0b298cbb36a2a6aa668"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/right_knee_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/right_knee_link.STL",
+      "bytes": 852284,
+      "sha256": "63c4008449c9bbe701a6e2b557b7a252e90cf3a5abcf54cee46862b9a69f8ec8"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/right_rubber_hand.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/right_rubber_hand.STL",
+      "bytes": 2192684,
+      "sha256": "99533b778bca6246144fa511bb9d4e555e075c641f2a0251e04372869cd99d67"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/right_shoulder_pitch_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/right_shoulder_pitch_link.STL",
+      "bytes": 176784,
+      "sha256": "24cdb387e0128dfe602770a81c56cdce3a0181d34d039a11d1aaf8819b7b8c02"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/right_shoulder_roll_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/right_shoulder_roll_link.STL",
+      "bytes": 401884,
+      "sha256": "962b97c48f9ce9e8399f45dd9522e0865d19aa9fd299406b2d475a8fc4a53e81"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/right_shoulder_yaw_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/right_shoulder_yaw_link.STL",
+      "bytes": 249984,
+      "sha256": "a0b76489271da0c72461a344c9ffb0f0c6e64f019ea5014c1624886c442a2fe5"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/right_wrist_pitch_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/right_wrist_pitch_link.STL",
+      "bytes": 79584,
+      "sha256": "d22f8f3b3127f15a63e5be1ee273cd5075786c3142f1c3d9f76cbf43d2a26477"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/right_wrist_roll_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/right_wrist_roll_link.STL",
+      "bytes": 356084,
+      "sha256": "a7ee9212ff5b94d6cb7f52bb1bbf3f352194d5b598acff74f4c77d340c5b344f"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/right_wrist_yaw_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/right_wrist_yaw_link.STL",
+      "bytes": 341484,
+      "sha256": "bc9dece2d12509707e0057ba2e48df8f3d56db0c79410212963a25e8a50f61a6"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/torso_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/torso_link.STL",
+      "bytes": 2232984,
+      "sha256": "e96d023f0368a4e3450b86ca5d4f10227d8141156a373e7da8cb3c93266523e0"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/torso_link_rev_1_0.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/torso_link_rev_1_0.STL",
+      "bytes": 2570584,
+      "sha256": "11ddb46f2098efbbd8816b1d65893632d8e78be936376c7cdcd6771899ccc723"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/waist_roll_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/waist_roll_link.STL",
+      "bytes": 24184,
+      "sha256": "34f0aa73f41131230be4d25876c944fdf6c24d62553f199ff8b980c15e8913df"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/waist_roll_link_rev_1_0.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/waist_roll_link_rev_1_0.STL",
+      "bytes": 85884,
+      "sha256": "b67c347a05abc3e8ddae600d98a082bee273bb39f8e651647708b0a7140a8a97"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/waist_support_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/waist_support_link.STL",
+      "bytes": 150484,
+      "sha256": "1fae9e1bb609848a1667d32eed8d6083ae443538a306843056a2a660f1b2926a"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/waist_yaw_link.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/waist_yaw_link.STL",
+      "bytes": 336284,
+      "sha256": "2883f20e03f09b669b5b4ce10677ee6b5191c0934b584d7cbaef2d0662856ffb"
+    },
+    {
+      "path": "mujoco/model/simple_g1/meshes/waist_yaw_link_rev_1_0.STL",
+      "source": "/home/ubuntu/yzh/Psi0_kimodo_textop/third_party/SIMPLE/data/robots/g1/meshes/waist_yaw_link_rev_1_0.STL",
+      "bytes": 619984,
+      "sha256": "ec6db442b11f25eed898b5add07940c85d804f300de24dcbd264ccd8be7d554c"
+    }
+  ],
+  "recording_scene_check": "Asset references from first sorted scene snapshot in each configured Task1-6 recording pool; no recording data included."
+}

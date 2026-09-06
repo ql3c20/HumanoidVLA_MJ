@@ -1,0 +1,2 @@
+# Preserve original mesh/XML whitespace and exact source hashes.
+mujoco/model/** -whitespace

@@ -1,0 +1,54 @@
+collision_spheres:
+  # Palm link - 3 spheres along palm length
+  right_hand_palm_link:
+  - "center": [0.055, 0.007, 0.0]
+    "radius": 0.01
+  - "center": [0.055, 0.007, 0.025]
+    "radius": 0.01
+  - "center": [0.055, 0.007, -0.025]
+    "radius": 0.01
+  
+  # Thumb base link - 1 sphere at joint
+  right_hand_thumb_0_link:
+  - "center": [-0.001, 0.02, 0.0]
+    "radius": 0.01
+  
+  # Thumb proximal link - 2 spheres along segment
+  right_hand_thumb_1_link:
+  - "center": [-0.0012, 0.025, 0.0]
+    "radius": 0.01
+  - "center": [-0.0012, 0.045, 0.0]
+    "radius": 0.01
+  
+  # Thumb distal link (fingertip) - 1 sphere
+  right_hand_thumb_2_link:
+  - "center": [-0.0015, 0.025, 0.0]
+    "radius": 0.01
+  
+  # Middle finger proximal - 2 spheres
+  right_hand_middle_0_link:
+  - "center": [0.0, 0.001, 0.0]
+    "radius": 0.01
+  - "center": [0.025, 0.0, 0.0]
+    "radius": 0.01
+  
+  # Middle finger distal (fingertip) - 2 spheres
+  right_hand_middle_1_link:
+  - "center": [0.0, -0.0015, 0.0]
+    "radius": 0.01
+  - "center": [0.03, -0.002, 0.0]
+    "radius": 0.01
+  
+  # Index finger proximal - 2 spheres
+  right_hand_index_0_link:
+  - "center": [0.0, 0.001, 0.0]
+    "radius": 0.01
+  - "center": [0.025, 0.0, 0.0]
+    "radius": 0.01
+  
+  # Index finger distal (fingertip) - 2 spheres
+  right_hand_index_1_link:
+  - "center": [0.0, -0.0015, 0.0]
+    "radius": 0.01
+  - "center": [0.03, -0.002, 0.0]
+    "radius": 0.01

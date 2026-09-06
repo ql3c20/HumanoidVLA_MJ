@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+output/
+outputs/
+*.mp4
+*.csv
+*.onnx
+*.pt
+*.pth
+*.safetensors
+.venv/
