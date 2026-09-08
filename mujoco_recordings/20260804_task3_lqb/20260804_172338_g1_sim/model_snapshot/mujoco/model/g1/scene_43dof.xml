@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mujoco model="task_scene_seed_0">
+  <include file="g1_29dof_with_hand.xml"/>
+  <compiler angle="radian" coordinate="local" meshdir="meshes"/>
+  <option timestep="0.0005" solver="Newton" iterations="200" ls_iterations="100"/>
+  <visual>
+    <headlight diffuse="0.8 0.8 0.8" ambient="0.1 0.1 0.1" specular="0.9 0.9 0.9"/>
+    <global azimuth="-140" elevation="-20" offwidth="2080" offheight="1170"/>
+  </visual>
+  <asset>
+    <texture type="skybox" builtin="gradient" rgb1="1 1 1" rgb2="1 1 1" width="800" height="800"/>
+    <texture type="2d" name="groundplane_tex" builtin="flat" rgb1="1 1 1" mark="edge" markrgb="0 0 0" width="64" height="64"/>
+    <material name="groundplane" texture="groundplane_tex" texuniform="true" texrepeat="12 12" reflectance="0"/>
+    <material name="task_table_top_mat" rgba="0.46 0.47 0.49 1" specular="0.2" shininess="0.35"/>
+    <material name="task_table_leg_mat" rgba="0.13 0.25 0.42 1" specular="0.2" shininess="0.35"/>
+    <mesh name="custom_step_trash_can_mesh_root_0" file="../../task_assets/2real_asset/trash/meshes/root_0.obj" scale="0.395257 0.395257 0.395257"/>
+    
+    
+    <mesh name="custom_step_trash_can_mesh_root_1" file="../../task_assets/2real_asset/trash/meshes/root_1.obj" scale="0.395257 0.395257 0.395257"/>
+    
+    
+    <mesh name="custom_step_trash_can_mesh_root_2" file="../../task_assets/2real_asset/trash/meshes/root_2.obj" scale="0.395257 0.395257 0.395257"/>
+    
+    
+    <mesh name="custom_step_trash_can_mesh_root_3" file="../../task_assets/2real_asset/trash/meshes/root_3.obj" scale="0.395257 0.395257 0.395257"/>
+    
+    
+    <mesh name="custom_step_trash_can_mesh_root_4" file="../../task_assets/2real_asset/trash/meshes/root_4.obj" scale="0.395257 0.395257 0.395257"/>
+    
+    
+    <texture name="custom_step_trash_can_trash_silver_tex" type="2d" file="../task_assets/2real_asset/trash/textures/trash_silver_brushed.png"/>
+    
+    
+    
+    <material name="custom_step_trash_can_trash_silver_mat" texture="custom_step_trash_can_trash_silver_tex" rgba="0.78 0.74 0.68 1" metallic="0.12" roughness="0.42" specular="0.45" shininess="0.72" reflectance="0.05" texuniform="false" texrepeat="1 1"/>
+    
+  
+  </asset>
+  <worldbody>
+    <geom name="floor" size="0 0 0.01" type="plane" material="groundplane" contype="1" conaffinity="0" priority="1" friction="0.6" condim="3"/>
+    <light diffuse="0.5 0.5 0.5" pos="-3 -3 5" dir="3 3 -5" castshadow="true"/>
+    <camera name="front" pos="0 -2.65 1.15" xyaxes="1 0 0 0 0.48 1"/>
+    <body name="custom_step_trash_can_mount" pos="0.78 0 0" quat="0.707107 0 0 -0.707107">
+      <body name="custom_step_trash_can_trash_can" quat="0.70710678 0.70710678 0 0">
+        
+      
+        <body name="custom_step_trash_can_bin">
+          
+        
+        
+          <geom name="custom_step_trash_can_bin_shell_visual" type="mesh" mesh="custom_step_trash_can_mesh_root_0" material="custom_step_trash_can_trash_silver_mat" group="1" contype="0" conaffinity="0" mass="0"/>
+          
+        
+          <geom name="custom_step_trash_can_bin_shell_collision" type="mesh" mesh="custom_step_trash_can_mesh_root_0" group="3" contype="1" conaffinity="1" condim="3" friction="0.8 0.03 0.01" rgba="0 0 0 0"/>
+          
+        
+          <geom name="custom_step_trash_can_bin_base_visual" type="mesh" mesh="custom_step_trash_can_mesh_root_2" material="custom_step_trash_can_trash_silver_mat" group="1" contype="0" conaffinity="0" mass="0"/>
+          
+        
+          <geom name="custom_step_trash_can_bin_base_collision" type="mesh" mesh="custom_step_trash_can_mesh_root_2" group="3" contype="1" conaffinity="1" condim="3" friction="0.8 0.03 0.01" rgba="0 0 0 0"/>
+          
+        
+          <geom name="custom_step_trash_can_lid_hinge_hardware" type="mesh" mesh="custom_step_trash_can_mesh_root_3" material="custom_step_trash_can_trash_silver_mat" group="1" contype="0" conaffinity="0" mass="0"/>
+          
+      
+        </body>
+        
+
+      
+      
+        <body name="custom_step_trash_can_lid" pos="0 0.476285 -0.12253" quat="0.60876143 0.79335334 0 0" gravcomp="1">
+          
+        
+          <joint name="custom_step_trash_can_lid_hinge_joint" type="hinge" axis="-1 0 0" range="0 1.3962634" limited="true" damping="0.004" stiffness="0.04" springref="0" armature="0.0002"/>
+          
+        
+          <geom name="custom_step_trash_can_lid_mesh_visual" type="mesh" mesh="custom_step_trash_can_mesh_root_1" pos="0 0 0" material="custom_step_trash_can_trash_silver_mat" group="1" contype="0" conaffinity="0" mass="0"/>
+          
+        
+          <geom name="custom_step_trash_can_lid_mesh_collision" type="mesh" mesh="custom_step_trash_can_mesh_root_1" pos="0 0 0" group="3" mass="0.12" contype="1" conaffinity="1" condim="3" friction="0.8 0.03 0.01" rgba="0 0 0 0"/>
+          
+      
+        </body>
+        
+
+      
+      
+      
+        <body name="custom_step_trash_can_pedal" pos="0 0.0375494 0.179842" gravcomp="1">
+          
+        
+          <joint name="custom_step_trash_can_pedal_hinge_joint" type="hinge" axis="-1 0 0" range="-0.17453293 0" limited="true" damping="0.005" stiffness="0.005" springref="0" armature="0.0001"/>
+          
+        
+          <geom name="custom_step_trash_can_pedal_mesh_visual" type="mesh" mesh="custom_step_trash_can_mesh_root_4" pos="0 -0.0296443 -0.179842" material="custom_step_trash_can_trash_silver_mat" group="1" contype="0" conaffinity="0" mass="0"/>
+          
+        
+        
+          <geom name="custom_step_trash_can_pedal_mesh_collision" type="box" pos="-0.000309881 -0.0053002 -0.00236897" size="0.0694625 0.0203824 0.0444302" group="3" mass="0.05" contype="1" conaffinity="1" condim="4" friction="1.2 0.04 0.02" rgba="0 0 0 0"/>
+          
+        
+          <site name="custom_step_trash_can_foot_press_site" pos="0 0.00592885 0.0474308" size="0.00711462" rgba="0.95 0.75 0.05 0.45"/>
+          
+      
+        </body>
+        
+    
+      </body>
+      
+  
+    </body>
+  </worldbody>
+  <contact>
+    
+    
+    
+    <exclude body1="custom_step_trash_can_lid" body2="custom_step_trash_can_bin"/>
+    
+    
+    <exclude body1="custom_step_trash_can_pedal" body2="custom_step_trash_can_bin"/>
+    
+  
+  </contact>
+  
+
+  <equality>
+    
+    
+    <joint name="custom_step_trash_can_pedal_lid_linkage" joint1="custom_step_trash_can_lid_hinge_joint" joint2="custom_step_trash_can_pedal_hinge_joint" polycoef="0 -8 0 0 0" solref="0.004 0.7" solimp="0.95 0.99 0.001"/>
+    
+  
+  </equality>
+  
+  
+</mujoco>
