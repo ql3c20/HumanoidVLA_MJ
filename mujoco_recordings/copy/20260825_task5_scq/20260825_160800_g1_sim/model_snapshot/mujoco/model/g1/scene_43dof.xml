@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mujoco model="task_scene_seed_0">
+  <include file="g1_29dof_with_hand.xml"/>
+  <compiler angle="radian" coordinate="local" meshdir="meshes"/>
+  <option timestep="0.0005" solver="Newton" iterations="200" ls_iterations="100"/>
+  <visual>
+    <headlight diffuse="0.8 0.8 0.8" ambient="0.1 0.1 0.1" specular="0.9 0.9 0.9"/>
+    <global azimuth="-140" elevation="-20" offwidth="2080" offheight="1170"/>
+  </visual>
+  <asset>
+    <texture type="skybox" builtin="gradient" rgb1="1 1 1" rgb2="1 1 1" width="800" height="800"/>
+    <texture type="2d" name="groundplane_tex" builtin="flat" rgb1="1 1 1" mark="edge" markrgb="0 0 0" width="64" height="64"/>
+    <material name="groundplane" texture="groundplane_tex" texuniform="true" texrepeat="12 12" reflectance="0"/>
+    <material name="task_table_top_mat" rgba="0.46 0.47 0.49 1" specular="0.2" shininess="0.35"/>
+    <material name="task_table_leg_mat" rgba="0.13 0.25 0.42 1" specular="0.2" shininess="0.35"/>
+    <material name="drawer_drawer_cabinet_mat" rgba="0.16 0.17 0.17 1" specular="0.24" shininess="0.36" reflectance="0.02"/>
+    
+    
+    <material name="drawer_drawer_front_mat" rgba="0.58 0.59 0.60 1" specular="0.30" shininess="0.44" reflectance="0.025"/>
+    
+    
+    <material name="drawer_drawer_handle_mat" rgba="0.035 0.035 0.040 1" specular="0.34" shininess="0.50" reflectance="0.015"/>
+    
+    
+    <texture name="drawer_drawer_bottom_oak_tex" type="2d" file="../task_assets/local_mjcf/drawer/assets/textures/oak_veneer_01_diff_1k.png"/>
+    
+    
+    <material name="drawer_drawer_bottom_oak_mat" texture="drawer_drawer_bottom_oak_tex" rgba="1 1 1 1" specular="0.12" shininess="0.18" reflectance="0.01" texuniform="false" texrepeat="1 1"/>
+    
+
+    
+    <mesh name="drawer_drawer_base_visual_mesh" file="../../task_assets/local_mjcf/drawer/assets/visual/drawer_base.stl" scale="0.001 0.001 0.001"/>
+    
+    
+    <mesh name="drawer_drawer_upper_visual_mesh" file="../../task_assets/local_mjcf/drawer/assets/visual/drawer_upper.stl" scale="0.001 0.001 0.001"/>
+    
+    
+    <mesh name="drawer_drawer_middle_visual_mesh" file="../../task_assets/local_mjcf/drawer/assets/visual/drawer_middle.stl" scale="0.001 0.001 0.001"/>
+    
+    
+    <mesh name="drawer_drawer_lower_visual_mesh" file="../../task_assets/local_mjcf/drawer/assets/visual/drawer_lower.stl" scale="0.001 0.001 0.001"/>
+    
+  
+  </asset>
+  <worldbody>
+    <geom name="floor" size="0 0 0.01" type="plane" material="groundplane" contype="1" conaffinity="0" priority="1" friction="0.6" condim="3"/>
+    <light diffuse="0.5 0.5 0.5" pos="-3 -3 5" dir="3 3 -5" castshadow="true"/>
+    <camera name="front" pos="0.45 -2.6 1.05" xyaxes="1 0 0 0 0.42 1"/>
+    <body name="drawer_mount" pos="0.92 0 0" quat="0.707107 0 0 -0.707107">
+      <body name="drawer_object">
+        
+      
+        <body name="drawer_cabinet">
+          
+        
+          <inertial pos="0 0.008 0.265" mass="20" diaginertia="0.8 0.75 0.6"/>
+          
+        
+          <geom name="drawer_cabinet_visual" type="mesh" mesh="drawer_drawer_base_visual_mesh" pos="-0.2 0.22 0" euler="1.570796327 0 0" material="drawer_drawer_cabinet_mat" group="1" contype="0" conaffinity="0" mass="0"/>
+          
+
+        
+          <geom name="drawer_cabinet_left_collision" type="box" pos="-0.192 0.008 0.2525" size="0.008 0.212 0.2525" group="3" contype="1" conaffinity="1" condim="4" friction="0.9 0.04 0.01" solref="0.004 1" solimp="0.95 0.99 0.001" mass="0" rgba="0 0 0 0"/>
+          
+        
+          <geom name="drawer_cabinet_right_collision" type="box" pos="0.192 0.008 0.2525" size="0.008 0.212 0.2525" group="3" contype="1" conaffinity="1" condim="4" friction="0.9 0.04 0.01" solref="0.004 1" solimp="0.95 0.99 0.001" mass="0" rgba="0 0 0 0"/>
+          
+        
+          <geom name="drawer_cabinet_back_collision" type="box" pos="0 0.212 0.2525" size="0.184 0.008 0.2525" group="3" contype="1" conaffinity="1" condim="4" friction="0.9 0.04 0.01" solref="0.004 1" solimp="0.95 0.99 0.001" mass="0" rgba="0 0 0 0"/>
+          
+        
+          <geom name="drawer_cabinet_bottom_collision" type="box" pos="0 0 0.0025" size="0.184 0.204 0.0025" group="3" contype="1" conaffinity="1" condim="4" friction="0.9 0.04 0.01" solref="0.004 1" solimp="0.95 0.99 0.001" mass="0" rgba="0 0 0 0"/>
+          
+        
+          <geom name="drawer_cabinet_top_collision" type="box" pos="0 0 0.5175" size="0.2 0.22 0.0125" group="3" contype="1" conaffinity="1" condim="4" friction="0.9 0.04 0.01" solref="0.004 1" solimp="0.95 0.99 0.001" mass="0" rgba="0 0 0 0"/>
+          
+        
+          <site name="drawer_cabinet_top_site" pos="0 0 0.535" size="0.012" rgba="0.1 0.6 1 0.25"/>
+          
+
+        
+          <body name="drawer_lower_drawer">
+            
+          
+            <joint name="drawer_lower_drawer_slide" type="slide" axis="0 -1 0" range="0 0.36" damping="0.6" frictionloss="0.04" armature="0.005"/>
+            
+          
+            <inertial pos="0 -0.033579 0.107" mass="5" diaginertia="0.09 0.07 0.13"/>
+            
+          
+            <geom name="drawer_lower_drawer_visual" type="mesh" mesh="drawer_drawer_lower_visual_mesh" pos="-0.2 0.22 0" euler="1.570796327 0 0" material="drawer_drawer_front_mat" group="1" contype="0" conaffinity="0" mass="0"/>
+            
+          
+            <geom name="drawer_lower_left_wall_visual" type="box" pos="-0.176 -0.000579 0.1045" size="0.0082 0.2042 0.0947" material="drawer_drawer_cabinet_mat" group="1" contype="0" conaffinity="0" mass="0"/>
+            
+          
+            <geom name="drawer_lower_right_wall_visual" type="box" pos="0.176 -0.000579 0.1045" size="0.0082 0.2042 0.0947" material="drawer_drawer_cabinet_mat" group="1" contype="0" conaffinity="0" mass="0"/>
+            
+          
+            <geom name="drawer_lower_rear_panel_visual" type="box" pos="0 0.195421 0.1045" size="0.168 0.008 0.0945" material="drawer_drawer_cabinet_mat" group="1" contype="0" conaffinity="0" mass="0"/>
+            
+          
+            <geom name="drawer_lower_front_inner_wall_visual" type="box" pos="0 -0.196579 0.1045" size="0.168 0.008 0.0945" material="drawer_drawer_cabinet_mat" group="1" contype="0" conaffinity="0" mass="0"/>
+            
+          
+            <geom name="drawer_lower_bottom_oak_visual" type="box" pos="0 -0.000579 0.0101" size="0.168 0.188 0.0001" material="drawer_drawer_bottom_oak_mat" group="1" contype="0" conaffinity="0" mass="0"/>
+            
+
+          
+          
+            <geom name="drawer_lower_handle_left_visual" type="box" pos="-0.055 -0.245579 0.1075" size="0.0052 0.0252 0.0127" material="drawer_drawer_handle_mat" group="1" contype="0" conaffinity="0" mass="0"/>
+            
+          
+            <geom name="drawer_lower_handle_right_visual" type="box" pos="0.055 -0.245579 0.1075" size="0.0052 0.0252 0.0127" material="drawer_drawer_handle_mat" group="1" contype="0" conaffinity="0" mass="0"/>
+            
+          
+            <geom name="drawer_lower_handle_grip_visual" type="box" pos="0 -0.265579 0.1075" size="0.0502 0.0052 0.0127" material="drawer_drawer_handle_mat" group="1" contype="0" conaffinity="0" mass="0"/>
+            
+
+          
+            <geom name="drawer_lower_bottom_collision" type="box" pos="0 -0.000579 0.0075" size="0.184 0.204 0.0025" group="3" contype="1" conaffinity="1" condim="4" friction="0.9 0.04 0.01" solref="0.004 1" solimp="0.95 0.99 0.001" mass="0" rgba="0 0 0 0"/>
+            
+          
+            <geom name="drawer_lower_left_wall_collision" type="box" pos="-0.176 -0.000579 0.1045" size="0.008 0.204 0.0945" group="3" contype="1" conaffinity="1" condim="4" friction="0.9 0.04 0.01" solref="0.004 1" solimp="0.95 0.99 0.001" mass="0" rgba="0 0 0 0"/>
+            
+          
+            <geom name="drawer_lower_right_wall_collision" type="box" pos="0.176 -0.000579 0.1045" size="0.008 0.204 0.0945" group="3" contype="1" conaffinity="1" condim="4" friction="0.9 0.04 0.01" solref="0.004 1" solimp="0.95 0.99 0.001" mass="0" rgba="0 0 0 0"/>
+            
+          
+            <geom name="drawer_lower_rear_panel_collision" type="box" pos="0 0.195421 0.1045" size="0.168 0.008 0.0945" group="3" contype="1" conaffinity="1" condim="4" friction="0.9 0.04 0.01" solref="0.004 1" solimp="0.95 0.99 0.001" mass="0" rgba="0 0 0 0"/>
+            
+          
+            <geom name="drawer_lower_front_inner_wall_collision" type="box" pos="0 -0.196579 0.1045" size="0.168 0.008 0.0945" group="3" contype="1" conaffinity="1" condim="4" friction="0.9 0.04 0.01" solref="0.004 1" solimp="0.95 0.99 0.001" mass="0" rgba="0 0 0 0"/>
+            
+          
+            <geom name="drawer_lower_front_collision" type="box" pos="0 -0.212579 0.107" size="0.2 0.008 0.107" group="3" contype="1" conaffinity="1" condim="4" friction="0.9 0.04 0.01" solref="0.004 1" solimp="0.95 0.99 0.001" mass="0" rgba="0 0 0 0"/>
+            
+          
+            <geom name="drawer_lower_handle_left_collision" type="box" pos="-0.055 -0.245579 0.1075" size="0.005 0.025 0.0125" group="3" contype="1" conaffinity="1" condim="4" friction="1.1 0.05 0.01" solref="0.004 1" solimp="0.95 0.99 0.001" mass="0" rgba="0 0 0 0"/>
+            
+          
+            <geom name="drawer_lower_handle_right_collision" type="box" pos="0.055 -0.245579 0.1075" size="0.005 0.025 0.0125" group="3" contype="1" conaffinity="1" condim="4" friction="1.1 0.05 0.01" solref="0.004 1" solimp="0.95 0.99 0.001" mass="0" rgba="0 0 0 0"/>
+            
+          
+            <geom name="drawer_lower_handle_grip_collision" type="box" pos="0 -0.265579 0.1075" size="0.05 0.005 0.0125" group="3" contype="1" conaffinity="1" condim="4" friction="1.1 0.05 0.01" solref="0.004 1" solimp="0.95 0.99 0.001" mass="0" rgba="0 0 0 0"/>
+            
+          
+            <site name="drawer_lower_drawer_handle_site" pos="0 -0.272 0.1075" size="0.012" rgba="0.1 0.6 1 0.25"/>
+            
+        
+          </body>
+          
+
+        
+          <body name="drawer_middle_drawer">
+            
+          
+            <joint name="drawer_middle_drawer_slide" type="slide" axis="0 -1 0" range="0 0.36" damping="0.6" frictionloss="0.04" armature="0.005"/>
+            
+          
+            <inertial pos="0 -0.034073 0.2875" mass="4" diaginertia="0.082 0.061 0.128"/>
+            
+          
+            <geom name="drawer_middle_drawer_visual" type="mesh" mesh="drawer_drawer_middle_visual_mesh" pos="-0.2 0.22 0" euler="1.570796327 0 0" material="drawer_drawer_front_mat" group="1" contype="0" conaffinity="0" mass="0"/>
+            
+          
+            <geom name="drawer_middle_left_wall_visual" type="box" pos="-0.176 -0.001073 0.2845" size="0.0082 0.2042 0.0597" material="drawer_drawer_cabinet_mat" group="1" contype="0" conaffinity="0" mass="0"/>
+            
+          
+            <geom name="drawer_middle_right_wall_visual" type="box" pos="0.176 -0.001073 0.2845" size="0.0082 0.2042 0.0597" material="drawer_drawer_cabinet_mat" group="1" contype="0" conaffinity="0" mass="0"/>
+            
+          
+            <geom name="drawer_middle_rear_panel_visual" type="box" pos="0 0.194927 0.2845" size="0.168 0.008 0.0595" material="drawer_drawer_cabinet_mat" group="1" contype="0" conaffinity="0" mass="0"/>
+            
+          
+            <geom name="drawer_middle_front_inner_wall_visual" type="box" pos="0 -0.197073 0.2845" size="0.168 0.008 0.0595" material="drawer_drawer_cabinet_mat" group="1" contype="0" conaffinity="0" mass="0"/>
+            
+          
+            <geom name="drawer_middle_bottom_oak_visual" type="box" pos="0 -0.001073 0.2251" size="0.168 0.188 0.0001" material="drawer_drawer_bottom_oak_mat" group="1" contype="0" conaffinity="0" mass="0"/>
+            
+
+          
+            <geom name="drawer_middle_handle_left_visual" type="box" pos="-0.055 -0.246073 0.2875" size="0.0052 0.0252 0.0127" material="drawer_drawer_handle_mat" group="1" contype="0" conaffinity="0" mass="0"/>
+            
+          
+            <geom name="drawer_middle_handle_right_visual" type="box" pos="0.055 -0.246073 0.2875" size="0.0052 0.0252 0.0127" material="drawer_drawer_handle_mat" group="1" contype="0" conaffinity="0" mass="0"/>
+            
+          
+            <geom name="drawer_middle_handle_grip_visual" type="box" pos="0 -0.266073 0.2875" size="0.0502 0.0052 0.0127" material="drawer_drawer_handle_mat" group="1" contype="0" conaffinity="0" mass="0"/>
+            
+
+          
+            <geom name="drawer_middle_bottom_collision" type="box" pos="0 -0.001073 0.2225" size="0.184 0.204 0.0025" group="3" contype="1" conaffinity="1" condim="4" friction="0.9 0.04 0.01" solref="0.004 1" solimp="0.95 0.99 0.001" mass="0" rgba="0 0 0 0"/>
+            
+          
+            <geom name="drawer_middle_left_wall_collision" type="box" pos="-0.176 -0.001073 0.2845" size="0.008 0.204 0.0595" group="3" contype="1" conaffinity="1" condim="4" friction="0.9 0.04 0.01" solref="0.004 1" solimp="0.95 0.99 0.001" mass="0" rgba="0 0 0 0"/>
+            
+          
+            <geom name="drawer_middle_right_wall_collision" type="box" pos="0.176 -0.001073 0.2845" size="0.008 0.204 0.0595" group="3" contype="1" conaffinity="1" condim="4" friction="0.9 0.04 0.01" solref="0.004 1" solimp="0.95 0.99 0.001" mass="0" rgba="0 0 0 0"/>
+            
+          
+            <geom name="drawer_middle_rear_panel_collision" type="box" pos="0 0.194927 0.2845" size="0.168 0.008 0.0595" group="3" contype="1" conaffinity="1" condim="4" friction="0.9 0.04 0.01" solref="0.004 1" solimp="0.95 0.99 0.001" mass="0" rgba="0 0 0 0"/>
+            
+          
+            <geom name="drawer_middle_front_inner_wall_collision" type="box" pos="0 -0.197073 0.2845" size="0.168 0.008 0.0595" group="3" contype="1" conaffinity="1" condim="4" friction="0.9 0.04 0.01" solref="0.004 1" solimp="0.95 0.99 0.001" mass="0" rgba="0 0 0 0"/>
+            
+          
+            <geom name="drawer_middle_front_collision" type="box" pos="0 -0.213073 0.2875" size="0.2 0.008 0.0715" group="3" contype="1" conaffinity="1" condim="4" friction="0.9 0.04 0.01" solref="0.004 1" solimp="0.95 0.99 0.001" mass="0" rgba="0 0 0 0"/>
+            
+          
+            <geom name="drawer_middle_handle_left_collision" type="box" pos="-0.055 -0.246073 0.2875" size="0.005 0.025 0.0125" group="3" contype="1" conaffinity="1" condim="4" friction="1.1 0.05 0.01" solref="0.004 1" solimp="0.95 0.99 0.001" mass="0" rgba="0 0 0 0"/>
+            
+          
+            <geom name="drawer_middle_handle_right_collision" type="box" pos="0.055 -0.246073 0.2875" size="0.005 0.025 0.0125" group="3" contype="1" conaffinity="1" condim="4" friction="1.1 0.05 0.01" solref="0.004 1" solimp="0.95 0.99 0.001" mass="0" rgba="0 0 0 0"/>
+            
+          
+            <geom name="drawer_middle_handle_grip_collision" type="box" pos="0 -0.266073 0.2875" size="0.05 0.005 0.0125" group="3" contype="1" conaffinity="1" condim="4" friction="1.1 0.05 0.01" solref="0.004 1" solimp="0.95 0.99 0.001" mass="0" rgba="0 0 0 0"/>
+            
+          
+            <site name="drawer_middle_drawer_handle_site" pos="0 -0.2725 0.2875" size="0.012" rgba="0.1 0.6 1 0.25"/>
+            
+        
+          </body>
+          
+
+        
+          <body name="drawer_upper_drawer">
+            
+          
+            <joint name="drawer_upper_drawer_slide" type="slide" axis="0 -1 0" range="0 0.36" damping="0.6" frictionloss="0.04" armature="0.005"/>
+            
+          
+            <inertial pos="0 -0.034462 0.433" mass="4" diaginertia="0.082 0.061 0.128"/>
+            
+          
+            <geom name="drawer_upper_drawer_visual" type="mesh" mesh="drawer_drawer_upper_visual_mesh" pos="-0.2 0.22 0" euler="1.570796327 0 0" material="drawer_drawer_front_mat" group="1" contype="0" conaffinity="0" mass="0"/>
+            
+          
+            <geom name="drawer_upper_left_wall_visual" type="box" pos="-0.176 -0.001462 0.4295" size="0.0082 0.2042 0.0597" material="drawer_drawer_cabinet_mat" group="1" contype="0" conaffinity="0" mass="0"/>
+            
+          
+            <geom name="drawer_upper_right_wall_visual" type="box" pos="0.176 -0.001462 0.4295" size="0.0082 0.2042 0.0597" material="drawer_drawer_cabinet_mat" group="1" contype="0" conaffinity="0" mass="0"/>
+            
+          
+            <geom name="drawer_upper_rear_panel_visual" type="box" pos="0 0.194538 0.4295" size="0.168 0.008 0.0595" material="drawer_drawer_cabinet_mat" group="1" contype="0" conaffinity="0" mass="0"/>
+            
+          
+            <geom name="drawer_upper_front_inner_wall_visual" type="box" pos="0 -0.197462 0.4295" size="0.168 0.008 0.0595" material="drawer_drawer_cabinet_mat" group="1" contype="0" conaffinity="0" mass="0"/>
+            
+          
+            <geom name="drawer_upper_bottom_oak_visual" type="box" pos="0 -0.001462 0.3701" size="0.168 0.188 0.0001" material="drawer_drawer_bottom_oak_mat" group="1" contype="0" conaffinity="0" mass="0"/>
+            
+
+          
+            <geom name="drawer_upper_handle_left_visual" type="box" pos="-0.055 -0.246462 0.4325" size="0.0052 0.0252 0.0127" material="drawer_drawer_handle_mat" group="1" contype="0" conaffinity="0" mass="0"/>
+            
+          
+            <geom name="drawer_upper_handle_right_visual" type="box" pos="0.055 -0.246462 0.4325" size="0.0052 0.0252 0.0127" material="drawer_drawer_handle_mat" group="1" contype="0" conaffinity="0" mass="0"/>
+            
+          
+            <geom name="drawer_upper_handle_grip_visual" type="box" pos="0 -0.266462 0.4325" size="0.0502 0.0052 0.0127" material="drawer_drawer_handle_mat" group="1" contype="0" conaffinity="0" mass="0"/>
+            
+          
+            <geom name="drawer_upper_lock_visual" type="cylinder" pos="-0.155 -0.223962 0.48" euler="1.570796327 0 0" size="0.0102 0.0027" material="drawer_drawer_handle_mat" group="1" contype="0" conaffinity="0" mass="0"/>
+            
+
+          
+            <geom name="drawer_upper_bottom_collision" type="box" pos="0 -0.001462 0.3675" size="0.184 0.204 0.0025" group="3" contype="1" conaffinity="1" condim="4" friction="0.9 0.04 0.01" solref="0.004 1" solimp="0.95 0.99 0.001" mass="0" rgba="0 0 0 0"/>
+            
+          
+            <geom name="drawer_upper_left_wall_collision" type="box" pos="-0.176 -0.001462 0.4295" size="0.008 0.204 0.0595" group="3" contype="1" conaffinity="1" condim="4" friction="0.9 0.04 0.01" solref="0.004 1" solimp="0.95 0.99 0.001" mass="0" rgba="0 0 0 0"/>
+            
+          
+            <geom name="drawer_upper_right_wall_collision" type="box" pos="0.176 -0.001462 0.4295" size="0.008 0.204 0.0595" group="3" contype="1" conaffinity="1" condim="4" friction="0.9 0.04 0.01" solref="0.004 1" solimp="0.95 0.99 0.001" mass="0" rgba="0 0 0 0"/>
+            
+          
+            <geom name="drawer_upper_rear_panel_collision" type="box" pos="0 0.194538 0.4295" size="0.168 0.008 0.0595" group="3" contype="1" conaffinity="1" condim="4" friction="0.9 0.04 0.01" solref="0.004 1" solimp="0.95 0.99 0.001" mass="0" rgba="0 0 0 0"/>
+            
+          
+            <geom name="drawer_upper_front_inner_wall_collision" type="box" pos="0 -0.197462 0.4295" size="0.168 0.008 0.0595" group="3" contype="1" conaffinity="1" condim="4" friction="0.9 0.04 0.01" solref="0.004 1" solimp="0.95 0.99 0.001" mass="0" rgba="0 0 0 0"/>
+            
+          
+            <geom name="drawer_upper_front_collision" type="box" pos="0 -0.213462 0.433" size="0.2 0.008 0.072" group="3" contype="1" conaffinity="1" condim="4" friction="0.9 0.04 0.01" solref="0.004 1" solimp="0.95 0.99 0.001" mass="0" rgba="0 0 0 0"/>
+            
+          
+            <geom name="drawer_upper_handle_left_collision" type="box" pos="-0.055 -0.246462 0.4325" size="0.005 0.025 0.0125" group="3" contype="1" conaffinity="1" condim="4" friction="1.1 0.05 0.01" solref="0.004 1" solimp="0.95 0.99 0.001" mass="0" rgba="0 0 0 0"/>
+            
+          
+            <geom name="drawer_upper_handle_right_collision" type="box" pos="0.055 -0.246462 0.4325" size="0.005 0.025 0.0125" group="3" contype="1" conaffinity="1" condim="4" friction="1.1 0.05 0.01" solref="0.004 1" solimp="0.95 0.99 0.001" mass="0" rgba="0 0 0 0"/>
+            
+          
+            <geom name="drawer_upper_handle_grip_collision" type="box" pos="0 -0.266462 0.4325" size="0.05 0.005 0.0125" group="3" contype="1" conaffinity="1" condim="4" friction="1.1 0.05 0.01" solref="0.004 1" solimp="0.95 0.99 0.001" mass="0" rgba="0 0 0 0"/>
+            
+          
+            <geom name="drawer_upper_lock_collision" type="cylinder" pos="-0.155 -0.223962 0.48" euler="1.570796327 0 0" size="0.01 0.0025" group="3" contype="1" conaffinity="1" condim="4" friction="0.9 0.04 0.01" solref="0.004 1" solimp="0.95 0.99 0.001" mass="0" rgba="0 0 0 0"/>
+            
+          
+            <site name="drawer_upper_drawer_handle_site" pos="0 -0.273 0.4325" size="0.012" rgba="0.1 0.6 1 0.25"/>
+            
+        
+          </body>
+          
+      
+        </body>
+        
+    
+      </body>
+      
+  
+    </body>
+  </worldbody>
+  <contact>
+    
+    
+    <exclude body1="drawer_cabinet" body2="drawer_lower_drawer"/>
+    
+    
+    <exclude body1="drawer_cabinet" body2="drawer_middle_drawer"/>
+    
+    
+    <exclude body1="drawer_cabinet" body2="drawer_upper_drawer"/>
+    
+    
+    <exclude body1="drawer_lower_drawer" body2="drawer_middle_drawer"/>
+    
+    
+    <exclude body1="drawer_lower_drawer" body2="drawer_upper_drawer"/>
+    
+    
+    <exclude body1="drawer_middle_drawer" body2="drawer_upper_drawer"/>
+    
+  
+  </contact>
+  
+
+</mujoco>
